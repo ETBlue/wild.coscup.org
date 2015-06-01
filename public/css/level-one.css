@@ -3,6 +3,13 @@
   padding-right: 0.5em;
 }
 
+.ui.yellow.inverted.segment {
+  color: #333 !important;
+}
+.ui.yellow.inverted.segment .ui.divider {
+  color: #333 !important;
+}
+
 .menu.simplified {
   -moz-border-radius: 0;
   -webkit-border-radius: 0;

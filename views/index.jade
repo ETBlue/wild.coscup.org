@@ -25,7 +25,7 @@ block content
                 p.tagline 開發者 × 使用者 × 推廣者 — COSCUP 開源人年會
                 p Conference for Open Source Coders, Users and Promoters 
               .four.wide.column
-                a(href='about').ui.horizontal.label.blue
+                a(href='about').ui.label.blue
                   i.icon.right.chevron
                   | 什麼是 COSCUP
           .ui.two.column.stackable.divided.grid.equal.height
@@ -33,7 +33,21 @@ block content
               .column
                 p COSCUP 十週年了！台灣的開源社群不斷茁壯、參與者越來越多元，近一兩年，開放的精神更是擴散到程式碼之外的領域，替社會注入一股新氣象。COSCUP 2015 的主軸即是「開放文化」，來吧！熱愛開放與自由的你，一起來讓開源精神散播到更廣大的世界吧！
               .column
-                p 時間地點
+                .ui.list.divided
+                  .item
+                    i.icon.calendar
+                    .content
+                      .header 時間
+                      .description 8/15 Sat. 9:30AM - ??PM
+                      .description 8/16 Sun. 9:30AM - ??PM
+                  .item
+                    i.icon.map.marker
+                    .content
+                      .header 地點
+                      .description 中研院人文館（研究院路 xxx xxx）
+                a(href='venue').ui.label
+                  i.icon.right.chevron
+                  | 詳細交通資訊
             //.column
               p 台灣開源社群一年一度的盛會，讓開發者、使用者與推廣者齊聚一堂，世界各地專家分享寶貴經驗，替全球 FLOSS 社群注入活力與創意。演講之外還有工作坊、社群 BoF 小聚，開放任何人免費報名，場地餐點硬體等開支皆來自贊助。
               p Open source 這個在 1998 年出現的名詞，大家早已耳熟能詳。這種在網路上已經進行二、三十年的軟體開發模式之所以能成功，有許多原因。其中一個極為關鍵的因素，就是 coder 與 user 的直接接觸。無屏障的交流形成了問題的快速回報和修補機制，而當這個機制被網路效應放大到極限時，Linus 定律就出現了：「臭蟲難逃眾人法眼」 (With enough eyeballs, all bugs are shallow) ，軟體品質因此顯著提昇。在 open source 的模式中，coders 和 users 中間的人不再是銷售員或客服，而是讓軟體更容易被 users 接受的推廣者 (promoters)，他們打包套件讓軟體更好裝、寫說明文件讓軟體更易學、辦推廣活動讓更多人接觸到好軟體、在網路上回答問題解決使用者的疑惑，而且不會把 coders 藏在背後產生資訊的不對稱。
@@ -46,37 +60,140 @@ block content
         .ui.three.column.stackable.grid.equal.height
           .row.stretched
             .column
-              .ui.segment.yellow.inverted
-                .ui.horizontal.divider 會眾報名
-                p VIP 會眾 5/?? (已結束，審核中)
-                p 一般會眾 7/?? (尚未開始)
+              .ui.segment.yellow.inverted.align.center
+                .ui.horizontal.divider.inverted 會眾報名
+                p 一段讓人覺得不來會死的文字，一段讓人覺得不來會死的文字，一段讓人覺得不來會死的文字，一段讓人覺得不來會死的文字。
+                p VIP 會眾 5/??
+                  span.ui.horizontal.black.label 已結束，審核中
+                p 一般會眾 7/??
+                  span.ui.horizontal.black.label 尚未開始
                 //.ui.button action 1
             .column
-              .ui.segment.green.inverted
-                .ui.horizontal.divider 講者報名
-                p 5/?? - 5/23 (已結束)
+              .ui.segment.green.inverted.align.center
+                .ui.horizontal.divider.inverted 講者報名
+                p 一段讓人腦充血投稿的文字，一段讓人腦充血投稿的文字，一段讓人腦充血投稿的文字，一段讓人腦充血投稿的文字。
+                p 5/?? - 5/23
+                  span.ui.horizontal.black.label 已結束，審核中
                 //.ui.button action 2
             .column
-              .ui.segment.teal.inverted
-                .ui.horizontal.divider 成為贊助商
-                .ui.button mailto button
-    section#top-sponsors
+              .ui.segment.teal.inverted.align.center
+                .ui.horizontal.divider.inverted 成為贊助商
+                p 一段讓人掏錢出來的文字，一段讓人掏錢出來的文字，一段讓人掏錢出來的文字，一段讓人掏錢出來的文字。
+                a.ui.teal.icon.labeled.button.inverted
+                  i.icon.mail
+                  | mailto button
+    section#top-sponsors.vertical.padding
       .horizontal.wrap
-        .ui.two.column.grid
-          .column
-            .ui.horizontal.segment sponsor logo 1
-          .column
-            .ui.horizontal.segment sponsor logo 2
+          .ui.two.column.stackable.grid.equal.height
+            .row
+              .column
+                .ui.horizontal.divider 鑽石級贊助
+                .ui.three.column.divided.grid
+                  .row.align.center
+                    .column
+                      .ui.image diamond
+                    .column
+                      .ui.image diamond
+                    .column
+                      .ui.image diamond
+              .column
+                .ui.horizontal.divider 黃金級贊助
+                .ui.six.column.divided.grid
+                  .row.align.center
+                    .column
+                      .ui.image gold
+                    .column
+                      .ui.image gold
+                    .column
+                      .ui.image gold
+                    .column
+                      .ui.image gold
+                    .column
+                      .ui.image gold
+    .ui.hidden.divider
     section#news
       .horizontal.wrap
-        .ui.two.column.stackable.grid
-          .column
-            .ui.horizontal.segment news type 1
-          .column
-            .ui.horizontal.segment news type 2
-    section#all-sponsors
+        .ui.segment
+          .ui.two.column.stackable.grid
+            .column
+              .ui.divided.items
+                .item
+                  .image
+                    img(src='img/logo.png')
+                  .content
+                    .header 新聞標題
+                    .meta 發佈日期
+                    .description
+                      p 摘要與預覽文字內容
+                    .extra
+                      .ui.label.right.floated
+                        i.icon.right.chevron
+                        | more
+                .item
+                  .image
+                    img(src='img/logo.png')
+                  .content
+                    .header 新聞標題
+                    .meta 發佈日期
+                    .description
+                      p 摘要與預覽文字內容
+                    .extra
+                      .ui.label.right.floated
+                        i.icon.right.chevron
+                        | more
+            .column
+              .ui.divided.items
+                .item
+                  .image
+                    img(src='img/logo.png')
+                  .content
+                    .header 新聞標題
+                    .meta 發佈日期
+                    .description
+                      p 摘要與預覽文字內容
+                    .extra
+                      .ui.label.right.floated
+                        i.icon.right.chevron
+                        | more
+                .item
+                  .image
+                    img(src='img/logo.png')
+                  .content
+                    .header 新聞標題
+                    .meta 發佈日期
+                    .description
+                      p 摘要與預覽文字內容
+                    .extra
+                      .ui.label.right.floated
+                        i.icon.right.chevron
+                        | more
+    section#all-sponsors.vertical.padding
       .horizontal.wrap
-        p all sponsors
+        .ui.two.column.stackable.grid
+          .row
+            .column
+              .ui.horizontal.divider 白銀級贊助
+              .ui.six.column.divided.grid
+                .row.align.center
+                  .column silver
+                  .column silver
+                  .column silver
+                  .column silver
+            .column
+              .ui.horizontal.divider 青銅級贊助
+              .ui.six.column.divided.grid
+                .row.align.center
+                  .column bronze
+                  .column bronze
+                  .column bronze
+                  .column bronze
+                  .column bronze
+                  .column bronze
+                  .column bronze
+                  .column bronze
+                  .column bronze
+                  .column bronze
+    .ui.hidden.divider
 
 block script
 
