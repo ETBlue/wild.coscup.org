@@ -1,0 +1,17 @@
+extends _level-one
+
+block subhead
+  //-meta(property="og:image",content="img/cover.png")
+
+block title
+  | 贊助者 | 
+
+block content
+  #backers.horizontal.wrap
+
+block script
+  script.
+    $(document).ready(function(){
+      $("[href*='backers']").addClass("active");
+    });
+

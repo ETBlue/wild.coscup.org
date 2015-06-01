@@ -1,0 +1,131 @@
+extends _level-one
+
+block subhead
+  //-meta(property="og:image",content="img/cover.png")
+
+block title
+  | 加入行動 | 
+
+block content
+  #join
+    section#header
+      #title.horizontal.wrap
+        .horizontal.vertical.padding
+          #text
+            h1.ui.header
+              i.icon.pointing.right
+              | 加入行動
+    //-section#action
+    section#content.horizontal.wrap
+      .horizontal.vertical.padding
+        .ui.horizontal.divider 訂閱
+        .ui.six.column.doubling.grid
+          .column
+            a.ui.icon.labeled.button.facebook.fluid(href='https://www.facebook.com/www.ocf.tw?fref=ts')
+              i.icon.facebook.page
+              | 粉絲頁
+          .column
+            a.ui.icon.labeled.button.fluid.teal(href='')
+              i.icon.newspaper
+              | 電子報
+          .column
+            a.ui.icon.labeled.button.blue.fluid(href='')
+              i.icon.calendar
+              | 日曆
+          .column
+            a.ui.icon.labeled.button.red.fluid(href='https://groups.google.com/forum/#!forum/ocf-general')
+              i.icon.mail.outline
+              | 討論區
+          .column
+            a.ui.icon.labeled.button.hackpad.fluid(href='https://ocf-tw.hackpad.com/')
+              i.icon.text.file.outline
+              | 共筆
+          .column
+            a.ui.icon.labeled.button.github.fluid(href='https://github.com/ocftw')
+              i.icon.github
+              | 程式碼
+      .horizontal.vertical.padding
+        .ui.horizontal.divider 支援專案
+        .ui.three.doubling.stackable.cards
+          .card
+            a(href='',target='_blank').image
+              img(src='img/cover.png')
+            .content
+              a(href='',target='_blank').header
+                i.right.floated.icon.external.square
+                | OCF 行政中心
+              .meta pofeng (OCF 董事)
+              .description 開設獨立帳戶、收款取款、對帳、製作報表、開立收據... 一點都不迷人的繁瑣的行政庶務，卻是在幕後默默支援所有專案、不可或缺的基礎建設。如果您無法決定要贊助哪個專案，就贊助我們吧！健康的行政中心讓所有專案都共同受益。
+            .ui.bottom.attached.fluid.buttons
+              a.ui.green.button(href='http://ocf.tw/cfs/donate_A.html')
+                i.icon.money
+                | 贊助專案
+          .card
+            a(href='',target='_blank').image
+              img(src='img/cover.png')
+            .content
+              a(href='',target='_blank').header
+                i.right.floated.icon.external.square
+                | 國際開源大使團
+              .meta clkao (OCF 董事)
+              .description OOO、OOO、OOO... 開源人不該缺席的國際盛會，讓台灣優秀學生也能參與！本計畫贊助台灣學生出國所需的交通、住宿費用，並舉辦募款講座，接受贊助者回國後必須向國人分享所見所聞，讓計畫效益擴散，同時替下一屆的經費尋求贊助。
+            .ui.bottom.attached.fluid.buttons
+              a.ui.green.button(href='http://ocf.tw/cfs/donate_C.html')
+                i.icon.money
+                | 贊助專案
+          .card
+            a(href='',target='_blank').image
+              img(src='img/cover.png')
+            .content
+              a(href='',target='_blank').header
+                i.right.floated.icon.external.square
+                | 開放文化影展
+              .meta bobchao (OCF 董事)
+              .description 資訊自由鬥士 Aaron Swartz 精彩生平、OOO、OOO... ，開放文化的風在全球各地吹起，精心拍攝的電影、紀錄片，凝聚了箇中精華。本計畫洽談影片授權、翻譯成正體中文、製作字幕並上映，讓國人一睹開放文化的風采。
+            .ui.bottom.attached.fluid.buttons
+              a.ui.green.button(href='http://ocf.tw/cfs/donate_B')
+                i.icon.money
+                | 贊助專案
+          .card
+            //-a(href='',target='_blank').image
+              .ratio
+                .container
+                  img(src='img/project-g0v-hackathon-banner.jpg')
+            a(href='',target='_blank').image
+              img(src='img/project-g0v-hackathon-banner.jpg')
+            .content
+              a(href='',target='_blank').header
+                i.right.floated.icon.external.square
+                | g0v 大松
+              .meta g0v 揪松團
+              .description g0v 零時政府發源地——固定雙月月底舉辦的 g0v 大松，工程師、設計師、律師、學者、NGO 工作者、公務員... 一起動手改變世界，現場提供源源不絕的食物，讓大家盡情 hack、eat、hack！開放任何人免費報名，場地餐點等費用皆來自贊助。
+            .ui.bottom.attached.two.stackable.buttons
+              a.ui.green.button(href='http://g0v-jothon.kktix.cc/events/g0v-dathon')
+                i.icon.money
+                | 贊助專案
+              a.ui.yellow.button(href='https://groups.google.com/forum/#!forum/g0v-jothon-staff')
+                i.icon.pointing.right
+                | 加入志工
+          .card
+            a(href='',target='_blank').image
+              img(src='img/project-coscup-banner.png')
+            .content
+              a(href='',target='_blank').header
+                i.right.floated.icon.external.square
+                | COSCUP 開源人年會
+              .meta COSCUP 工作小組
+              .description 一年一度的盛會，讓開放原始碼的開發者、使用者與推廣者齊聚一堂，世界各地專家分享寶貴經驗，替全球 FLOSS 社群注入活力與創意。演講之外還有工作坊、社群 BoF 小聚，開放任何人免費報名，場地餐點硬體等開支皆來自贊助。
+            .ui.bottom.attached.two.stackable.buttons
+              a.ui.green.button(href='')
+                i.icon.money
+                | 贊助專案
+              a.ui.yellow.button(href='https://groups.google.com/forum/#!forum/coscup-general')
+                i.icon.pointing.right
+                | 加入志工
+
+
+block script
+  script.
+    $(document).ready(function(){
+      $("[href*='join']").addClass("active");
+    });

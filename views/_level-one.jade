@@ -1,0 +1,68 @@
+extends _template
+
+block head
+  link(rel="stylesheet",href="css/level-one.css")
+  meta(property="og:image",content="img/cover.png")
+
+  block subhead
+
+block body
+
+  nav#topbar
+    //-.ui.borderless.secondary.menu.simplified.horizontal.wrap
+    .ui.borderless.menu.simplified.horizontal.wrap
+      .desktop.laptop
+        //a.logo.item(href="index")
+          img.logo.image(src="img/logo.png")
+        a.item(href="index")
+          | COSCUP 2015
+        include -level-one-nav
+      .tablet.phone
+        //.ui.simple.dropdown.logo.item
+        .ui.simple.dropdown.item
+          | COSCUP 2015
+          //img.logo.image(src="img/logo.png")
+          i.icon.dropdown
+          .menu
+            a.item(href="index") COSCUP 2015 首頁
+            include -level-one-nav
+      .right.menu
+        a.item(href="join")
+          i.icon.pointing.right
+          span.desktop.laptop 參加 COSCUP 2015！
+        a.item(href="partners")
+          i.icon.money
+          span.desktop.laptop 贊助 COSCUP 2015！
+        //-.ui.simple.dropdown.right.item
+          i.icon.globe
+          | 語言
+          i.icon.dropdown
+          .menu
+            .item English
+            .item 正體中文
+        //-.right.item
+          .ui.icon.input
+            input(type='text',placeholder='')
+            i.icon.search.link
+        block topbar
+
+  block content
+
+  footer#bottombar
+    //-.ui.borderless.secondary.menu.simplified.horizontal.wrap
+    .ui.borderless.menu.simplified.horizontal.wrap
+      a.item(href='speakers') 講者
+      a.item(href='staff') 工作人員
+      a.item(href="partners") 合作夥伴
+      a.item(href='community') 社群交流區
+      .right.menu
+        a.item(href="about")
+          span.phone
+            i.icon.code
+          span.desktop.laptop.tablet 關於 COSCUP.org 野生官網
+        a.ui.button.item(target="_blank",href="http://COSCUP.org/")
+          span.desktop.laptop.tablet.phone COSCUP.org 官網
+          i.icon.forward.mail
+
+  include -footer
+

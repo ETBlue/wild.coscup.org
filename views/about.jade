@@ -1,0 +1,24 @@
+extends _level-one
+
+block subhead
+  //-meta(property="og:image",content="img/cover.png")
+
+block title
+  | 關於本站 | 
+
+block content
+  #about
+    section#content.horizontal.wrap
+      .horizontal.vertical.padding.align.center
+        h1 歡迎光臨 COSCUP.org 野生官網
+        .ui.divider
+        p 本站程式碼以 CC0 釋出：
+          a.ui.icon.labeled.compact.button(target='_blank',href='https://github.com/ETBlue/wild.coscup.org') wild.coscup.org
+            i.icon.github
+
+block script
+  script.
+    $(document).ready(function(){
+      $("[href*='about']").addClass("active");
+    });
+

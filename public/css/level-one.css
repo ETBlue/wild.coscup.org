@@ -1,0 +1,203 @@
+.ui.button {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+.menu.simplified {
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.menu.simplified .item:first-child, .menu.simplified .item:last-child {
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+
+#topbar, #bottombar {
+  background-color: #f6f6f6;
+}
+#topbar .ui.menu, #bottombar .ui.menu {
+  margin-bottom: 0;
+}
+#topbar .ui.menu .logo.image, #bottombar .ui.menu .logo.image {
+  height: 2rem;
+  display: inline;
+}
+#topbar .ui.menu .item, #bottombar .ui.menu .item {
+  padding: 1rem 0.8rem;
+}
+#topbar .ui.menu .item.logo, #bottombar .ui.menu .item.logo {
+  padding: 0.5rem 0.8rem;
+}
+#topbar .ui.menu .item.logo.dropdown.item > .icon, #bottombar .ui.menu .item.logo.dropdown.item > .icon {
+  padding-top: 0.5rem;
+}
+
+#footer {
+  background-color: #999;
+}
+#footer .logo a, #footer .logo a:link {
+  color: #FFF;
+  padding: 0;
+}
+#footer .logo a .label, #footer .logo a:link .label {
+  background-color: transparent !important;
+  font-size: 1rem;
+  font-weight: normal;
+}
+#footer .logo a .label:hover, #footer .logo a:link .label:hover {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+}
+#footer .logo a .label .icon, #footer .logo a:link .label .icon {
+  color: #FFF;
+}
+#footer .ui.list .header {
+  display: inline-block;
+  margin-right: 1em;
+}
+#footer .ui.list .description {
+  display: inline;
+}
+
+#header #title {
+  position: relative;
+}
+#header #title .background.image {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+#header #title .background.image img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+#header #title .cover {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+#header #title #text {
+  position: relative;
+  z-index: 10;
+  color: #fff;
+}
+#header #title #text .icon {
+  font-size: 1em;
+  vertical-align: baseline;
+}
+
+#home ul.bxslider {
+  margin: 0;
+}
+#home ul.bxslider img {
+  margin: 0 auto;
+}
+#home #promote li {
+  background-color: #333;
+}
+
+#about #content {
+  background-color: #FFF;
+}
+
+#donate #header {
+  background-color: #ccc;
+}
+#donate #mode {
+  background-color: #fff;
+}
+#donate #content {
+  background-color: #fff;
+}
+#donate .form .role {
+  margin-bottom: -1rem;
+}
+
+#join #header {
+  background-color: #fff;
+}
+#join #header #title {
+  background-color: #f2c61f;
+}
+#join #header #title #text {
+  text-align: center;
+}
+#join #content .ui.labeled.icon.button {
+  padding-left: 3em !important;
+  padding-right: 0.5em !important;
+}
+#join #content .button.hackpad {
+  background-color: #53af98;
+  color: #FFF;
+}
+#join #content .button.hackpad:hover {
+  background-color: #64b7a2;
+}
+#join #content .button.github {
+  background-color: #111;
+  color: #FFF;
+}
+#join #content .button.github:hover {
+  background-color: #2b2b2b;
+}
+#join .card .image {
+  height: 8rem;
+}
+#join .card .image img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+#join .card .ratio {
+  width: 100%;
+  padding-bottom: 52.5%;
+  position: relative;
+}
+#join .card .ratio .container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+#join .card .ratio .container img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  -moz-border-radius: 0.2857rem 0.2857rem 0 0;
+  -webkit-border-radius: 0.2857rem;
+  border-radius: 0.2857rem 0.2857rem 0 0;
+}
+#join .card .header .icon {
+  line-height: inherit;
+  margin: 0 0 0 0.25em;
+  color: #ddd;
+  -moz-transition-property: color;
+  -o-transition-property: color;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -moz-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+}
+#join .card .header:hover .icon {
+  color: #009fda;
+}
+#join .card .bottom .button .pointing.right.icon {
+  margin: 0 0.4em 0 -0.2em;
+}
