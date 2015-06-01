@@ -1,0 +1,217 @@
+
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <!-- Favicon-->
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>
+    <!-- For iOS (TODO)-->
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <link rel="apple-touch-icon-precomposed" href="img/app-icon/icon-60.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="img/app-icon/icon-76.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="img/app-icon/icon-60@2x.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="img/app-icon/icon-76@2x.png"/>
+    <!-- jquery-->
+    <script type="text/javascript" src="assets/jquery-2.1.3.min.js"></script>
+    <!-- semantic ui-->
+    <link rel="stylesheet" type="text/css" href="assets/semantic-ui/1.12.3/semantic.min.css"/>
+    <script type="text/javascript" src="assets/semantic-ui/1.12.3/semantic.min.js"></script>
+    <!-- custom-->
+    <link rel="stylesheet" href="css/global.css"/>
+    <script type="text/javascript" src="js/global.js"></script>
+    <!-- for mobile, responsive-->
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="css/level-one.css"/>
+    <meta property="og:image" content="img/cover.png"/>
+    <!-- bxslider-->
+    <!--link(rel="stylesheet",type="text/css",href="assets/jquery.bxslider/jquery.bxslider.css")-->
+    <!--script(type="text/javascript",src="assets/jquery.bxslider/jquery.bxslider.min.js")-->
+    <title>首頁 | 開源人年會 COSCUP.org 野生官網</title>
+  </head>
+  <body>
+    <nav id="topbar">
+      <div class="ui borderless menu simplified horizontal wrap">
+        <div class="desktop laptop">
+          <!--a.logo.item(href="index")img.logo.image(src="img/logo.png")
+          --><a href="index" class="item">COSCUP 2015</a><a href="news" class="item">
+            <!--i.icon.rss-->新聞</a><a href="program" class="item">
+            <!--i.icon.calendar-->議程</a><a href="venue" class="item">
+            <!--i.icon.map.marker-->交通資訊</a>
+        </div>
+        <div class="tablet phone">
+          <!--.ui.simple.dropdown.logo.item-->
+          <div class="item">COSCUP 2015</div>
+          <div class="ui simple dropdown item">首頁
+            <!--img.logo.image(src="img/logo.png")--><i class="icon dropdown"></i>
+            <div class="menu"><a href="index" class="item">首頁</a><a href="news" class="item">
+                <!--i.icon.rss-->新聞</a><a href="program" class="item">
+                <!--i.icon.calendar-->議程</a><a href="venue" class="item">
+                <!--i.icon.map.marker-->交通資訊</a></div>
+          </div>
+        </div>
+        <div class="right menu"><a href="join" class="item"><i class="icon pointing right"></i><span class="desktop laptop">參加！</span></a><a href="partners" class="item"><i class="icon money"></i><span class="desktop laptop">贊助！</span></a>
+        </div>
+      </div>
+    </nav>
+    <div id="home">
+      <section id="promote">
+        <div class="horizontal wrap">
+          <div class="ui image"><img src="img/cover.png"/></div>
+        </div>
+      </section>
+      <section id="summary">
+        <div class="horizontal wrap">
+          <div class="horizontal vertical padding">
+            <div class="ui two column stackable grid equal height divided inverted">
+              <div class="blue row align center">
+                <div class="twelve wide column">
+                  <p class="tagline">開發者 × 使用者 × 推廣者 — COSCUP 開源人年會</p>
+                  <p>Conference for Open Source Coders, Users and Promoters </p>
+                </div>
+                <div class="four wide column"><a href="about" class="ui horizontal label blue"><i class="icon right chevron"></i>什麼是 COSCUP</a></div>
+              </div>
+            </div>
+            <div class="ui two column stackable divided grid equal height">
+              <div class="row stretched">
+                <div class="column">
+                  <p>COSCUP 十週年了！台灣的開源社群不斷茁壯、參與者越來越多元，近一兩年，開放的精神更是擴散到程式碼之外的領域，替社會注入一股新氣象。COSCUP 2015 的主軸即是「開放文化」，來吧！熱愛開放與自由的你，一起來讓開源精神散播到更廣大的世界吧！</p>
+                </div>
+                <div class="column">
+                  <p>時間地點</p>
+                </div>
+              </div>
+              <!--.column
+              p 台灣開源社群一年一度的盛會，讓開發者、使用者與推廣者齊聚一堂，世界各地專家分享寶貴經驗，替全球 FLOSS 社群注入活力與創意。演講之外還有工作坊、社群 BoF 小聚，開放任何人免費報名，場地餐點硬體等開支皆來自贊助。
+              p Open source 這個在 1998 年出現的名詞，大家早已耳熟能詳。這種在網路上已經進行二、三十年的軟體開發模式之所以能成功，有許多原因。其中一個極為關鍵的因素，就是 coder 與 user 的直接接觸。無屏障的交流形成了問題的快速回報和修補機制，而當這個機制被網路效應放大到極限時，Linus 定律就出現了：「臭蟲難逃眾人法眼」 (With enough eyeballs, all bugs are shallow) ，軟體品質因此顯著提昇。在 open source 的模式中，coders 和 users 中間的人不再是銷售員或客服，而是讓軟體更容易被 users 接受的推廣者 (promoters)，他們打包套件讓軟體更好裝、寫說明文件讓軟體更易學、辦推廣活動讓更多人接觸到好軟體、在網路上回答問題解決使用者的疑惑，而且不會把 coders 藏在背後產生資訊的不對稱。
+              p Coders、users 和 promoters 是讓 open source 軟體發光發熱的三大支柱，這個研討會就是專為這三種人舉辦的：你可以是 A 軟體的 coder、B 軟體的 promoter、C 軟體的 user，不論你是已經踏入 open source 領域，還是一直站在門口不知如何入門，歡迎你來參加 COSCUP — Conference for Open Source Coders, Users and Promoters!
+              p Founded in 2006。前身是 ICOS 社群議程，再前身是 OSW。
+              p 開放原始碼的開發者、推廣者、使用者、還是想了解軟體的新手，都歡迎您來參加
+              p 全臺最大規模的COSCUP就像是一年一度的臺灣開源社群大聚會，涵蓋了開發者、使用者與推廣者。雖然開發者是主要的生產者，讓這3種角色互相交流，也能讓使用者，成為開發者或推廣者。
+              -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="now-action">
+        <div class="horizontal wrap">
+          <div class="ui three column stackable grid equal height">
+            <div class="row stretched">
+              <div class="column">
+                <div class="ui segment yellow inverted">
+                  <div class="ui horizontal divider">會眾報名</div>
+                  <p>VIP 會眾 5/?? (已結束，審核中)</p>
+                  <p>一般會眾 7/?? (尚未開始)</p>
+                  <!--.ui.button action 1-->
+                </div>
+              </div>
+              <div class="column">
+                <div class="ui segment green inverted">
+                  <div class="ui horizontal divider">講者報名</div>
+                  <p>5/?? - 5/23 (已結束)</p>
+                  <!--.ui.button action 2-->
+                </div>
+              </div>
+              <div class="column">
+                <div class="ui segment teal inverted">
+                  <div class="ui horizontal divider">成為贊助商</div>
+                  <div class="ui button">mailto button</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="top-sponsors">
+        <div class="horizontal wrap">
+          <div class="ui two column grid">
+            <div class="column">
+              <div class="ui horizontal segment">sponsor logo 1</div>
+            </div>
+            <div class="column">
+              <div class="ui horizontal segment">sponsor logo 2</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="news">
+        <div class="horizontal wrap">
+          <div class="ui two column stackable grid">
+            <div class="column">
+              <div class="ui horizontal segment">news type 1</div>
+            </div>
+            <div class="column">
+              <div class="ui horizontal segment">news type 2</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="all-sponsors">
+        <div class="horizontal wrap">
+          <p>all sponsors</p>
+        </div>
+      </section>
+    </div>
+    <footer id="bottombar">
+      <div class="ui borderless menu simplified horizontal wrap"><a href="speakers" class="item">講者</a><a href="staff" class="item">工作人員</a><a href="partners" class="item">合作夥伴</a><a href="community" class="item">社群交流區</a>
+        <div class="right menu"><a href="about" class="item"><span class="phone"><i class="icon code"></i></span><span class="desktop laptop tablet">關於</span></a><a target="_blank" href="http://COSCUP.org/" class="ui button item"><span class="desktop laptop tablet phone">COSCUP 正版官網</span><i class="icon forward mail"></i></a></div>
+      </div>
+    </footer>
+    <footer id="footer">
+      <div class="horizontal wrap">
+        <div class="ui secondary inverted basic segment">
+          <p class="align center">COSCUP 開源人年會 - Conference for Open Source Coders, Users and Promoters</p>
+          <p class="align center">（一小段簡介 + 一個連結到歷屆活動頁）</p>
+          <!--.ui.three.column.stackable.divided.grid.inverted
+          .row
+            .column
+              .ui.list.inverted
+                .item
+                  .header 統編
+                  .description 38552170
+                .item
+                  .header 銀行
+                  .description 玉山銀行 (808) 南桃園分行
+                .item
+                  .header 帳號
+                  .description 0842 940 010302
+                .item
+                  .header 戶名
+                  .description 財團法人開放文化基金會
+            .column
+              .ui.list.inverted
+                .item
+                  .header 桃園辦公室
+                .item
+                  .header 地址
+                  .description (330)桃園市桃園區中山路807號
+                .item
+                  .header 電話
+                  .description (03) 220 7480
+                .item
+                  .header 傳真
+                  .description (03) 220 1542
+            .column.align.center.logo
+              .ui.medium.image
+                img(src='img/logo-inverted.png')
+              //-.ui.horizontal.divider.inverted 開放源碼、開放標準、開放硬體、開放資料、開放系統
+              .ui.list
+                a.item(href='http://ocf.tw/',target='_blank')
+                  .ui.black.horizontal.label
+                    i.icon.globe
+                    | ocf.tw
+                a.item(href='mailto:mail.ocf.tw@gmail.com?subject=Mail from Website')
+                  .ui.black.horizontal.label
+                    i.icon.mail
+                    | mail.ocf.tw@gmail.com
+          -->
+        </div>
+      </div>
+    </footer>
+    <script>
+      $(document).ready(function(){
+        $("[href*='index']").addClass("active");
+      });
+      
+    </script>
+  </body>
+</html>
