@@ -99,11 +99,14 @@
 #home .tagline {
   font-size: 1.2rem;
 }
-#home #promote {
+#home #vi {
   background-color: #b3e5e6;
 }
 #home #summary p {
   margin: 0;
+}
+#home #now-action {
+  background-color: #f5e6d6;
 }
 
 #about #content {
