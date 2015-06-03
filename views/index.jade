@@ -12,7 +12,7 @@ block title
 
 block content
   #home
-    section#promote
+    header#vi
       .horizontal.wrap
         .ui.image
           img(src='img/cover.png')
@@ -57,69 +57,97 @@ block content
               p 全臺最大規模的COSCUP就像是一年一度的臺灣開源社群大聚會，涵蓋了開發者、使用者與推廣者。雖然開發者是主要的生產者，讓這3種角色互相交流，也能讓使用者，成為開發者或推廣者。
     section#now-action
       .horizontal.wrap
-        .ui.three.column.stackable.grid.equal.height
-          .row.stretched
-            .column
-              .ui.segment.yellow.inverted.align.center
-                .ui.horizontal.divider.inverted 會眾報名
-                p 一段讓人覺得不來會死的文字，一段讓人覺得不來會死的文字，一段讓人覺得不來會死的文字，一段讓人覺得不來會死的文字。
-                p VIP 會眾 5/??
-                  span.ui.horizontal.black.label 已結束，審核中
-                p 一般會眾 7/??
-                  span.ui.horizontal.black.label 尚未開始
-                //.ui.button action 1
-            .column
-              .ui.segment.green.inverted.align.center
-                .ui.horizontal.divider.inverted 講者報名
-                p 一段讓人腦充血投稿的文字，一段讓人腦充血投稿的文字，一段讓人腦充血投稿的文字，一段讓人腦充血投稿的文字。
-                p 5/?? - 5/23
-                  span.ui.horizontal.black.label 已結束，審核中
-                //.ui.button action 2
-            .column
-              .ui.segment.teal.inverted.align.center
-                .ui.horizontal.divider.inverted 成為贊助商
-                p 一段讓人掏錢出來的文字，一段讓人掏錢出來的文字，一段讓人掏錢出來的文字，一段讓人掏錢出來的文字。
-                a.ui.teal.icon.labeled.button.inverted
-                  i.icon.mail
-                  | mailto button
+        .horizontal.vertical.padding
+          .ui.three.column.stackable.grid.equal.height
+            .row
+              .column
+                .ui.segments
+                  .ui.segment.align.center
+                    h2.ui.top.attached.yellow.label.large 會眾報名
+                    p 一段讓人覺得不來會死的文字，一段讓人覺得不來會死的文字，一段讓人覺得不來會死的文字，一段讓人覺得不來會死的文字。
+                  .ui.segment.align.center
+                    //h3.ui.header 大會
+                    h3.ui.small.header 大會 VIP
+                      .sub.header 5/1 - 5/1
+                    .ui.horizontal.fluid.black.label 已結束，審核中
+                  .ui.segment.align.center
+                    h3.ui.small.header 大會一般會眾
+                      .sub.header 7/1 - 7/1
+                    .ui.horizontal.fluid.black.label 尚未開始
+                  .ui.segment.align.center
+                    h3.ui.small.header 工作坊
+                      .sub.header 6/2 - 7/1
+                    a(href='http://coscup2015.kktix.cc/events/workshop2015').ui.icon.labeled.fluid.button.yellow 立刻搶票！
+                      i.icon.right.pointing
+              .column
+                .ui.segments
+                  .ui.segment.align.center
+                    h2.ui.top.attached.green.label.large 講者報名
+                    p 一段讓人腦充血投稿的文字，一段讓人腦充血投稿的文字，一段讓人腦充血投稿的文字，一段讓人腦充血投稿的文字。
+                  .ui.segment.align.center
+                    h3.ui.small.header 議程講者
+                      .sub.header 5/?? - 5/23
+                    .ui.horizontal.fluid.black.label 已結束，審核中
+                  .ui.segment.align.center
+                    h3.ui.small.header 閃電秀講者
+                      .sub.header 8/16 12:00 pm - 
+                    .ui.horizontal.fluid.black.label 現場登記
+              .column
+                .ui.segment.align.center
+                  h2.ui.top.attached.teal.label.large 成為贊助商
+                  p 一段讓人掏錢出來的文字，一段讓人掏錢出來的文字，一段讓人掏錢出來的文字，一段讓人掏錢出來的文字。
+                  a.ui.teal.icon.labeled.fluid.button
+                    i.icon.mail
+                    | 聯絡贊助小組
+                  code email@email.com
     section#top-sponsors.vertical.padding
       .horizontal.wrap
           .ui.two.column.stackable.grid.equal.height
             .row
               .column
                 .ui.horizontal.divider 鑽石級贊助
-                .ui.three.column.divided.grid
-                  .row.align.center
+                .ui.two.column.divided.grid
+                  .row
                     .column
-                      .ui.image diamond
+                      .ui.image
+                        img(src='img/logo.png')
                     .column
-                      .ui.image diamond
+                      .ui.image
+                        img(src='img/logo.png')
+                  .row
                     .column
-                      .ui.image diamond
+                      .ui.image
+                        img(src='img/logo.png')
               .column
                 .ui.horizontal.divider 黃金級贊助
-                .ui.six.column.divided.grid
-                  .row.align.center
+                .ui.three.column.divided.grid
+                  .row
                     .column
-                      .ui.image gold
+                      .ui.image
+                        img(src='img/logo.png')
                     .column
-                      .ui.image gold
+                      .ui.image
+                        img(src='img/logo.png')
                     .column
-                      .ui.image gold
+                      .ui.image
+                        img(src='img/logo.png')
+                  .row
                     .column
-                      .ui.image gold
+                      .ui.image
+                        img(src='img/logo.png')
                     .column
-                      .ui.image gold
+                      .ui.image
+                        img(src='img/logo.png')
     .ui.hidden.divider
     section#news
       .horizontal.wrap
-        .ui.segment
+        .ui.segment.secondary
           .ui.two.column.stackable.grid
             .column
               .ui.divided.items
                 .item
                   .image
-                    img(src='img/logo.png')
+                    img(src='img/cover.png')
                   .content
                     .header 新聞標題
                     .meta 發佈日期
@@ -131,7 +159,7 @@ block content
                         | more
                 .item
                   .image
-                    img(src='img/logo.png')
+                    img(src='img/cover.png')
                   .content
                     .header 新聞標題
                     .meta 發佈日期
@@ -145,7 +173,7 @@ block content
               .ui.divided.items
                 .item
                   .image
-                    img(src='img/logo.png')
+                    img(src='img/cover.png')
                   .content
                     .header 新聞標題
                     .meta 發佈日期
@@ -157,7 +185,7 @@ block content
                         | more
                 .item
                   .image
-                    img(src='img/logo.png')
+                    img(src='img/cover.png')
                   .content
                     .header 新聞標題
                     .meta 發佈日期
@@ -173,26 +201,43 @@ block content
           .row
             .column
               .ui.horizontal.divider 白銀級贊助
-              .ui.six.column.divided.grid
-                .row.align.center
-                  .column silver
-                  .column silver
-                  .column silver
-                  .column silver
+              .ui.three.column.divided.grid
+                .row
+                  .column
+                    img(src='img/logo.png')
+                  .column
+                    img(src='img/logo.png')
+                  .column
+                    img(src='img/logo.png')
+                .row
+                  .column
+                    img(src='img/logo.png')
             .column
               .ui.horizontal.divider 青銅級贊助
-              .ui.six.column.divided.grid
-                .row.align.center
-                  .column bronze
-                  .column bronze
-                  .column bronze
-                  .column bronze
-                  .column bronze
-                  .column bronze
-                  .column bronze
-                  .column bronze
-                  .column bronze
-                  .column bronze
+              .ui.four.column.divided.grid
+                .row
+                  .column
+                    img(src='img/logo.png')
+                  .column
+                    img(src='img/logo.png')
+                  .column
+                    img(src='img/logo.png')
+                  .column
+                    img(src='img/logo.png')
+                .row
+                  .column
+                    img(src='img/logo.png')
+                  .column
+                    img(src='img/logo.png')
+                  .column
+                    img(src='img/logo.png')
+                  .column
+                    img(src='img/logo.png')
+                .row
+                  .column
+                    img(src='img/logo.png')
+                  .column
+                    img(src='img/logo.png')
     .ui.hidden.divider
 
 block script

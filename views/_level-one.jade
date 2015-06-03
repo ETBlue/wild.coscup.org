@@ -31,10 +31,10 @@ block body
       .right.menu
         a.item(href="join")
           i.icon.pointing.right
-          span.desktop.laptop 參加！
+          span.desktop.laptop.tablet 參加！
         a.item(href="partners")
           i.icon.money
-          span.desktop.laptop 贊助！
+          span.desktop.laptop.tablet 贊助！
         //-.ui.simple.dropdown.right.item
           i.icon.globe
           | 語言
@@ -53,14 +53,24 @@ block body
   footer#bottombar
     //-.ui.borderless.secondary.menu.simplified.horizontal.wrap
     .ui.borderless.menu.simplified.horizontal.wrap
-      a.item(href='speakers') 講者
-      a.item(href='staff') 工作人員
-      a.item(href="partners") 合作夥伴
-      a.item(href='community') 社群交流區
+      .desktop.laptop.tablet
+        a.item(href='speakers') 講者
+        a.item(href='staff') 工作人員
+        a.item(href="partners") 合作夥伴
+        a.item(href='community') 社群交流區
+      .phone
+        .ui.simple.dropdown.item
+          | 參與者
+          i.icon.dropdown
+          .menu
+            a.item(href='speakers') 講者
+            a.item(href='staff') 工作人員
+            a.item(href="partners") 合作夥伴
+            a.item(href='community') 社群交流區
       .right.menu
         a.item(href="about")
           span.phone
-            i.icon.code
+            i.icon.info
           span.desktop.laptop.tablet 關於
         a.ui.button.item(target="_blank",href="http://COSCUP.org/")
           span.desktop.laptop.tablet.phone COSCUP 正版官網
