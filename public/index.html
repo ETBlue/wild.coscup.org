@@ -49,16 +49,16 @@
                 <!--i.icon.map.marker-->交通資訊</a></div>
           </div>
         </div>
-        <div class="right menu"><a href="join" class="item"><i class="icon pointing right"></i><span class="desktop laptop">參加！</span></a><a href="partners" class="item"><i class="icon money"></i><span class="desktop laptop">贊助！</span></a>
+        <div class="right menu"><a href="join" class="item"><i class="icon pointing right"></i><span class="desktop laptop tablet">參加！</span></a><a href="partners" class="item"><i class="icon money"></i><span class="desktop laptop tablet">贊助！</span></a>
         </div>
       </div>
     </nav>
     <div id="home">
-      <section id="promote">
+      <header id="vi">
         <div class="horizontal wrap">
           <div class="ui image"><img src="img/cover.png"/></div>
         </div>
-      </section>
+      </header>
       <section id="summary">
         <div class="horizontal wrap">
           <div class="horizontal vertical padding">
@@ -68,7 +68,7 @@
                   <p class="tagline">開發者 × 使用者 × 推廣者 — COSCUP 開源人年會</p>
                   <p>Conference for Open Source Coders, Users and Promoters </p>
                 </div>
-                <div class="four wide column"><a href="about" class="ui horizontal label blue"><i class="icon right chevron"></i>什麼是 COSCUP</a></div>
+                <div class="four wide column"><a href="about" class="ui label blue"><i class="icon right chevron"></i>什麼是 COSCUP</a></div>
               </div>
             </div>
             <div class="ui two column stackable divided grid equal height">
@@ -77,7 +77,21 @@
                   <p>COSCUP 十週年了！台灣的開源社群不斷茁壯、參與者越來越多元，近一兩年，開放的精神更是擴散到程式碼之外的領域，替社會注入一股新氣象。COSCUP 2015 的主軸即是「開放文化」，來吧！熱愛開放與自由的你，一起來讓開源精神散播到更廣大的世界吧！</p>
                 </div>
                 <div class="column">
-                  <p>時間地點</p>
+                  <div class="ui list divided">
+                    <div class="item"><i class="icon calendar"></i>
+                      <div class="content">
+                        <div class="header">時間</div>
+                        <div class="description">8/15 Sat. 9:30AM - ??PM</div>
+                        <div class="description">8/16 Sun. 9:30AM - ??PM</div>
+                      </div>
+                    </div>
+                    <div class="item"><i class="icon map marker"></i>
+                      <div class="content">
+                        <div class="header">地點</div>
+                        <div class="description">中研院人文館（研究院路 xxx xxx）</div>
+                      </div>
+                    </div>
+                  </div><a href="venue" class="ui label"><i class="icon right chevron"></i>詳細交通資訊</a>
                 </div>
               </div>
               <!--.column
@@ -94,73 +108,256 @@
       </section>
       <section id="now-action">
         <div class="horizontal wrap">
-          <div class="ui three column stackable grid equal height">
-            <div class="row stretched">
-              <div class="column">
-                <div class="ui segment yellow inverted">
-                  <div class="ui horizontal divider">會眾報名</div>
-                  <p>VIP 會眾 5/?? (已結束，審核中)</p>
-                  <p>一般會眾 7/?? (尚未開始)</p>
-                  <!--.ui.button action 1-->
+          <div class="horizontal vertical padding">
+            <div class="ui three column stackable grid equal height">
+              <div class="row">
+                <div class="column">
+                  <div class="ui segments">
+                    <div class="ui segment align center">
+                      <h2 class="ui top attached yellow label large">會眾報名</h2>
+                      <p>一段讓人覺得不來會死的文字，一段讓人覺得不來會死的文字，一段讓人覺得不來會死的文字，一段讓人覺得不來會死的文字。</p>
+                    </div>
+                    <div class="ui segment align center">
+                      <!--h3.ui.header 大會-->
+                      <h3 class="ui small header">大會 VIP
+                        <div class="sub header">5/1 - 5/1</div>
+                      </h3>
+                      <div class="ui horizontal fluid black label">已結束，審核中</div>
+                    </div>
+                    <div class="ui segment align center">
+                      <h3 class="ui small header">大會一般會眾
+                        <div class="sub header">7/1 - 7/1</div>
+                      </h3>
+                      <div class="ui horizontal fluid black label">尚未開始</div>
+                    </div>
+                    <div class="ui segment align center">
+                      <h3 class="ui small header">工作坊
+                        <div class="sub header">6/2 - 7/1</div>
+                      </h3><a href="http://coscup2015.kktix.cc/events/workshop2015" class="ui icon labeled fluid button yellow">立刻搶票！<i class="icon right pointing"></i></a>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="column">
-                <div class="ui segment green inverted">
-                  <div class="ui horizontal divider">講者報名</div>
-                  <p>5/?? - 5/23 (已結束)</p>
-                  <!--.ui.button action 2-->
+                <div class="column">
+                  <div class="ui segments">
+                    <div class="ui segment align center">
+                      <h2 class="ui top attached green label large">講者報名</h2>
+                      <p>一段讓人腦充血投稿的文字，一段讓人腦充血投稿的文字，一段讓人腦充血投稿的文字，一段讓人腦充血投稿的文字。</p>
+                    </div>
+                    <div class="ui segment align center">
+                      <h3 class="ui small header">議程講者
+                        <div class="sub header">5/?? - 5/23</div>
+                      </h3>
+                      <div class="ui horizontal fluid black label">已結束，審核中</div>
+                    </div>
+                    <div class="ui segment align center">
+                      <h3 class="ui small header">閃電秀講者
+                        <div class="sub header">8/16 12:00 pm - </div>
+                      </h3>
+                      <div class="ui horizontal fluid black label">現場登記</div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="column">
-                <div class="ui segment teal inverted">
-                  <div class="ui horizontal divider">成為贊助商</div>
-                  <div class="ui button">mailto button</div>
+                <div class="column">
+                  <div class="ui segment align center">
+                    <h2 class="ui top attached teal label large">成為贊助商</h2>
+                    <p>一段讓人掏錢出來的文字，一段讓人掏錢出來的文字，一段讓人掏錢出來的文字，一段讓人掏錢出來的文字。</p><a class="ui teal icon labeled fluid button"><i class="icon mail"></i>聯絡贊助小組</a><code>email@email.com</code>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section id="top-sponsors">
+      <section id="top-sponsors" class="vertical padding">
         <div class="horizontal wrap">
-          <div class="ui two column grid">
-            <div class="column">
-              <div class="ui horizontal segment">sponsor logo 1</div>
-            </div>
-            <div class="column">
-              <div class="ui horizontal segment">sponsor logo 2</div>
+          <div class="ui two column stackable grid equal height">
+            <div class="row">
+              <div class="column">
+                <div class="ui horizontal divider">鑽石級贊助</div>
+                <div class="ui two column divided grid">
+                  <div class="row">
+                    <div class="column">
+                      <div class="ui image"><img src="img/logo.png"/></div>
+                    </div>
+                    <div class="column">
+                      <div class="ui image"><img src="img/logo.png"/></div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="column">
+                      <div class="ui image"><img src="img/logo.png"/></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="column">
+                <div class="ui horizontal divider">黃金級贊助</div>
+                <div class="ui three column divided grid">
+                  <div class="row">
+                    <div class="column">
+                      <div class="ui image"><img src="img/logo.png"/></div>
+                    </div>
+                    <div class="column">
+                      <div class="ui image"><img src="img/logo.png"/></div>
+                    </div>
+                    <div class="column">
+                      <div class="ui image"><img src="img/logo.png"/></div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="column">
+                      <div class="ui image"><img src="img/logo.png"/></div>
+                    </div>
+                    <div class="column">
+                      <div class="ui image"><img src="img/logo.png"/></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
+      <div class="ui hidden divider"></div>
       <section id="news">
         <div class="horizontal wrap">
-          <div class="ui two column stackable grid">
-            <div class="column">
-              <div class="ui horizontal segment">news type 1</div>
-            </div>
-            <div class="column">
-              <div class="ui horizontal segment">news type 2</div>
+          <div class="ui segment secondary">
+            <div class="ui two column stackable grid">
+              <div class="column">
+                <div class="ui divided items">
+                  <div class="item">
+                    <div class="image"><img src="img/cover.png"/></div>
+                    <div class="content">
+                      <div class="header">新聞標題</div>
+                      <div class="meta">發佈日期</div>
+                      <div class="description">
+                        <p>摘要與預覽文字內容</p>
+                      </div>
+                      <div class="extra">
+                        <div class="ui label right floated"><i class="icon right chevron"></i>more</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="image"><img src="img/cover.png"/></div>
+                    <div class="content">
+                      <div class="header">新聞標題</div>
+                      <div class="meta">發佈日期</div>
+                      <div class="description">
+                        <p>摘要與預覽文字內容</p>
+                      </div>
+                      <div class="extra">
+                        <div class="ui label right floated"><i class="icon right chevron"></i>more</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="column">
+                <div class="ui divided items">
+                  <div class="item">
+                    <div class="image"><img src="img/cover.png"/></div>
+                    <div class="content">
+                      <div class="header">新聞標題</div>
+                      <div class="meta">發佈日期</div>
+                      <div class="description">
+                        <p>摘要與預覽文字內容</p>
+                      </div>
+                      <div class="extra">
+                        <div class="ui label right floated"><i class="icon right chevron"></i>more</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="image"><img src="img/cover.png"/></div>
+                    <div class="content">
+                      <div class="header">新聞標題</div>
+                      <div class="meta">發佈日期</div>
+                      <div class="description">
+                        <p>摘要與預覽文字內容</p>
+                      </div>
+                      <div class="extra">
+                        <div class="ui label right floated"><i class="icon right chevron"></i>more</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <section id="all-sponsors">
+      <section id="all-sponsors" class="vertical padding">
         <div class="horizontal wrap">
-          <p>all sponsors</p>
+          <div class="ui two column stackable grid">
+            <div class="row">
+              <div class="column">
+                <div class="ui horizontal divider">白銀級贊助</div>
+                <div class="ui three column divided grid">
+                  <div class="row">
+                    <div class="column"><img src="img/logo.png"/></div>
+                    <div class="column"><img src="img/logo.png"/></div>
+                    <div class="column"><img src="img/logo.png"/></div>
+                  </div>
+                  <div class="row">
+                    <div class="column"><img src="img/logo.png"/></div>
+                  </div>
+                </div>
+              </div>
+              <div class="column">
+                <div class="ui horizontal divider">青銅級贊助</div>
+                <div class="ui four column divided grid">
+                  <div class="row">
+                    <div class="column"><img src="img/logo.png"/></div>
+                    <div class="column"><img src="img/logo.png"/></div>
+                    <div class="column"><img src="img/logo.png"/></div>
+                    <div class="column"><img src="img/logo.png"/></div>
+                  </div>
+                  <div class="row">
+                    <div class="column"><img src="img/logo.png"/></div>
+                    <div class="column"><img src="img/logo.png"/></div>
+                    <div class="column"><img src="img/logo.png"/></div>
+                    <div class="column"><img src="img/logo.png"/></div>
+                  </div>
+                  <div class="row">
+                    <div class="column"><img src="img/logo.png"/></div>
+                    <div class="column"><img src="img/logo.png"/></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
+      <div class="ui hidden divider"></div>
     </div>
     <footer id="bottombar">
-      <div class="ui borderless menu simplified horizontal wrap"><a href="speakers" class="item">講者</a><a href="staff" class="item">工作人員</a><a href="partners" class="item">合作夥伴</a><a href="community" class="item">社群交流區</a>
-        <div class="right menu"><a href="about" class="item"><span class="phone"><i class="icon code"></i></span><span class="desktop laptop tablet">關於</span></a><a target="_blank" href="http://COSCUP.org/" class="ui button item"><span class="desktop laptop tablet phone">COSCUP 正版官網</span><i class="icon forward mail"></i></a></div>
+      <div class="ui borderless menu simplified horizontal wrap">
+        <div class="desktop laptop tablet"><a href="speakers" class="item">講者</a><a href="staff" class="item">工作人員</a><a href="partners" class="item">合作夥伴</a><a href="community" class="item">社群交流區</a></div>
+        <div class="phone">
+          <div class="ui simple dropdown item">參與者<i class="icon dropdown"></i>
+            <div class="menu"><a href="speakers" class="item">講者</a><a href="staff" class="item">工作人員</a><a href="partners" class="item">合作夥伴</a><a href="community" class="item">社群交流區</a></div>
+          </div>
+        </div>
+        <div class="right menu"><a href="about" class="item"><span class="phone"><i class="icon info"></i></span><span class="desktop laptop tablet">關於</span></a><a target="_blank" href="http://COSCUP.org/" class="ui button item"><span class="desktop laptop tablet phone">COSCUP 正版官網</span><i class="icon forward mail"></i></a></div>
       </div>
     </footer>
     <footer id="footer">
       <div class="horizontal wrap">
         <div class="ui secondary inverted basic segment">
-          <p class="align center">COSCUP 開源人年會 - Conference for Open Source Coders, Users and Promoters</p>
-          <p class="align center">（一小段簡介 + 一個連結到歷屆活動頁）</p>
+          <div class="ui two column stackable divided inverted grid equal height">
+            <div class="row align center">
+              <div class="twelve wide column">
+                <p>開發者 × 使用者 × 推廣者 — COSCUP 開源人年會<br/>Conference for Open Source Coders, Users and Promoters </p>
+              </div>
+              <div class="four wide column">
+                <div class="ui list inverted">
+                  <div class="item"><a href="" class="ui horizontal label black"><i class="icon comments"></i>google groups</a></div>
+                  <div class="item"><a mailto="" class="ui horizontal label black"><i class="icon mail"></i>mail@coscup.org</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
           <!--.ui.three.column.stackable.divided.grid.inverted
           .row
             .column
