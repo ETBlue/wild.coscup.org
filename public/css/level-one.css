@@ -3,6 +3,11 @@
   padding-right: 0.5em;
 }
 
+.icon.external.square:last-child, .ui.menu .item .icon.external.square:last-child {
+  margin-left: 0.5em;
+  margin-right: 0;
+}
+
 .menu.simplified {
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
@@ -111,6 +116,10 @@
 
 #about .content {
   background-color: #FFF;
+}
+#about .meta {
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
 }
 #about #vi {
   background-color: #b3e5e6;
