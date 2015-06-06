@@ -109,8 +109,11 @@
   background-color: #f5e6d6;
 }
 
-#about #content {
+#about .content {
   background-color: #FFF;
+}
+#about #vi {
+  background-color: #b3e5e6;
 }
 
 #donate #header {
