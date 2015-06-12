@@ -16,6 +16,8 @@ $github: #111
 // program
 
 #program
+  #header
+    background-color: hsla(210,50,80,1)
   #announcement
     background-color: rgba(red,0.1)
   #sessions
@@ -37,11 +39,21 @@ $github: #111
         padding: 0.25rem
         overflow-x: scroll
         white-space: nowrap
+        &.expired
+          opacity: 0.8
+          height: 4rem
+          .segment
+            background-color: rgba(#fff,0)
+        &.active
+          +border-radius(0.5rem)
+          border: 2px hsla(0,100,50,1) solid
+          //+box-shadow(0 0 5px hsla(0,100,50,1))
+          //background-color: hsla(0,100,50,0.5)
         .column
           white-space: normal
           margin: 0
           padding: 0
-          min-width: 100px
+          min-width: 120px
           .segment
             padding: 0.5rem
             i.icon:last-child
@@ -50,3 +62,5 @@ $github: #111
             .ui.label:first-child
               margin-left: 0
               margin-right: 0.5em
+            .message
+              padding: 0.5rem
