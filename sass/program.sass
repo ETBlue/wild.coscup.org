@@ -1,0 +1,52 @@
+@charset "UTF-8"
+@import compass/css3
+
+// semantic ui
+$yellow: #f2c61f
+$orange: #e07b53
+$red: #d95c5c
+$green: #5bbd72
+$teal: #00b5ad
+$blue: #3b83c0
+
+// third party
+$hackpad: #53af98
+$github: #111
+
+// program
+
+#program
+  #announcement
+    background-color: rgba(red,0.1)
+  #sessions
+    .ui.grid
+      margin: 0
+      padding: 0
+      padding-left: 4rem
+      .slot
+        position: relative
+        .time
+          position: absolute
+          left: -4rem
+          top: 0
+          font-size: 1rem
+          width: 3.5rem
+          text-align: right
+      .row
+        margin: 0
+        padding: 0.25rem
+        overflow-x: scroll
+        white-space: nowrap
+        .column
+          white-space: normal
+          margin: 0
+          padding: 0
+          min-width: 100px
+          .segment
+            padding: 0.5rem
+            i.icon:last-child
+              margin-left: 0.5em
+              margin-right: 0
+            .ui.label:first-child
+              margin-left: 0
+              margin-right: 0.5em

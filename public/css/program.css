@@ -1,0 +1,42 @@
+#program #announcement {
+  background-color: rgba(255, 0, 0, 0.1);
+}
+#program #sessions .ui.grid {
+  margin: 0;
+  padding: 0;
+  padding-left: 4rem;
+}
+#program #sessions .ui.grid .slot {
+  position: relative;
+}
+#program #sessions .ui.grid .slot .time {
+  position: absolute;
+  left: -4rem;
+  top: 0;
+  font-size: 1rem;
+  width: 3.5rem;
+  text-align: right;
+}
+#program #sessions .ui.grid .row {
+  margin: 0;
+  padding: 0.25rem;
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+#program #sessions .ui.grid .row .column {
+  white-space: normal;
+  margin: 0;
+  padding: 0;
+  min-width: 100px;
+}
+#program #sessions .ui.grid .row .column .segment {
+  padding: 0.5rem;
+}
+#program #sessions .ui.grid .row .column .segment i.icon:last-child {
+  margin-left: 0.5em;
+  margin-right: 0;
+}
+#program #sessions .ui.grid .row .column .segment .ui.label:first-child {
+  margin-left: 0;
+  margin-right: 0.5em;
+}

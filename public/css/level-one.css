@@ -8,7 +8,7 @@
   margin-right: 0;
 }
 
-.menu.simplified {
+.menu.simplified, .segment.simplified {
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
   border-radius: 0;
@@ -16,7 +16,7 @@
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-.menu.simplified .item:first-child, .menu.simplified .item:last-child {
+.menu.simplified .item:first-child, .menu.simplified .item:last-child, .segment.simplified .item:first-child, .segment.simplified .item:last-child {
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
   border-radius: 0;
@@ -68,6 +68,9 @@
   display: inline;
 }
 
+#header {
+  background-color: #b3e5e6;
+}
 #header #title {
   position: relative;
 }

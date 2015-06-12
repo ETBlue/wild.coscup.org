@@ -1,0 +1,77 @@
+extends _level-one
+
+block subhead
+  link(rel="stylesheet",href="css/program.css")
+  //-meta(property="og:image",content="img/cover.png")
+
+block title
+  | 議程 | 
+
+block content
+  #program
+    header#header.align.center
+      .horizontal.wrap
+        .horizontal.vertical.padding
+          h1.ui.header
+            //-i.icon.pointing.right
+            | 議程
+          #countdown
+            span.inline.block 籌備中！
+            span.inline.block 距離活動開始還有
+            span.inline.block __ 天 __ 小時 __ 分 __ 秒
+    section#filter
+      .horizontal.wrap
+        .ui.menu.simplified.fluid.two.item.inverted.teal.no.margin
+          a.item.active Day 1
+            .ui.label 8/15 Sat.
+          a.item Day 2
+            .ui.label 8/16 Sun.
+        .ui.secondary.pointing.menu.no.margin
+          a.item.blue.active 五軌議程
+            .ui.label.blue 5
+          a.item.teal 三軌工作坊
+            .ui.label.teal 3
+          a.item.green 兩軌 unconf
+            .ui.label.green 2
+          a.right.item.yellow 我喜歡的
+            i.icon.star.yellow
+            .ui.label.yellow 10
+    section#sessions.vertical.padding
+      .horizontal.wrap
+        .ui.grid.five.column
+          .slot
+            .time 9:00
+          .row
+            include -session1
+            include -session2
+            include -session1
+            include -session2
+            include -session1
+          .slot
+            .time 10:00
+          .row
+            .ui.horizontal.divider break
+          .slot
+            .time 11:00
+          .row
+            include -session2
+            include -session1
+            include -session2
+            include -session1
+            include -session2
+    section#announcement.align.center
+      .horizontal.wrap
+        .ui.red.inverted.segment.simplified
+          i.icon.announcement
+          span 大會公告：遺失物品請到櫃臺領取
+    section#advertisement.align.center
+      .horizontal.wrap
+
+block footer
+
+block script
+  script.
+    $(document).ready(function(){
+      $("[href*='program']").addClass("active");
+    });
+
