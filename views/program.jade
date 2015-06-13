@@ -22,9 +22,9 @@ block content
     section#filter
       .horizontal.wrap
         #day-menu.ui.menu.simplified.fluid.two.item.blue.inverted.no.margin
-          a.item(data-active-time='',data-expire-time='',data-tab='day-1') Day 1
+          a.item(data-active-on='',data-expire-on='',data-tab='day-1') Day 1
             .ui.label 8/15 Sat.
-          a.item(data-active-time='',data-expire-time='',data-tab='day-2') Day 2
+          a.item(data-active-on='',data-expire-on='',data-tab='day-2') Day 2
             .ui.label 8/16 Sun.
         .ui.secondary.pointing.menu.no.margin
           a.item.blue(data-change-schedule='session') 五軌議程
@@ -39,13 +39,13 @@ block content
             .ui.label.yellow 10
     section#day-1.ui.tab(data-tab='day-1')
       section.session.active.schedule(data-use-schedule='session')
-        .loader.ui.active.inverted.dimmer
+        //.loader.ui.active.inverted.dimmer
           .ui.text.loader loading
         .horizontal.wrap
           .ui.grid.five.column
             .slot
               .time 9:00
-            .row(data-active-time='',data-expire-time='').expire
+            .row(data-active-on='',data-expire-on='').expire
               include -session1
               include -session2
               include -session1
@@ -53,11 +53,11 @@ block content
               include -session1
             .slot
               .time 10:00
-            .row(data-active-time='',data-expire-time='').expire
+            .row(data-active-on='',data-expire-on='').expire
               .ui.horizontal.divider break
             .slot
               .time 11:00
-            .row(data-active-time='',data-expire-time='').active
+            .row(data-active-on='',data-expire-on='').active
               include -session2
               include -session1
               include -session2
@@ -65,31 +65,31 @@ block content
               include -session2
             .slot
               .time 12:00
-            .row(data-active-time='',data-expire-time='')
+            .row(data-active-on='',data-expire-on='')
               .ui.horizontal.divider break
             .slot
               .time 13:00
-            .row(data-active-time='',data-expire-time='')
+            .row(data-active-on='',data-expire-on='')
               include -session2
               include -session1
               include -session2
               include -session1
               include -session2
       section.workshop.schedule(data-use-schedule='workshop')
-        .loader.ui.active.inverted.dimmer
+        //.loader.ui.active.inverted.dimmer
           .ui.text.loader loading
       section.unconf.schedule(data-use-schedule='unconf')
-        .loader.ui.active.inverted.dimmer
+        //.loader.ui.active.inverted.dimmer
           .ui.text.loader loading
     section#day-2.ui.tab(data-tab='day-2')
       section.session.active.schedule(data-use-schedule='session')
-        .loader.ui.active.inverted.dimmer
+        //.loader.ui.active.inverted.dimmer
           .ui.text.loader loading
         .horizontal.wrap
           .ui.grid.five.column
             .slot
               .time 9:00
-            .row(data-active-time='',data-expire-time='').expire
+            .row(data-active-on='',data-expire-on='').expire
               include -session1
               include -session2
               include -session1
@@ -97,11 +97,11 @@ block content
               include -session1
             .slot
               .time 10:00
-            .row(data-active-time='',data-expire-time='').expire
+            .row(data-active-on='',data-expire-on='').expire
               .ui.horizontal.divider break
             .slot
               .time 11:00
-            .row(data-active-time='',data-expire-time='').active
+            .row(data-active-on='',data-expire-on='').active
               include -session2
               include -session1
               include -session2
@@ -109,21 +109,21 @@ block content
               include -session2
             .slot
               .time 12:00
-            .row(data-active-time='',data-expire-time='')
+            .row(data-active-on='',data-expire-on='')
               .ui.horizontal.divider break
             .slot
               .time 13:00
-            .row(data-active-time='',data-expire-time='')
+            .row(data-active-on='',data-expire-on='')
               include -session2
               include -session1
               include -session2
               include -session1
               include -session2
       section.workshop.schedule(data-use-schedule='workshop')
-        .loader.ui.active.inverted.dimmer
+        //.loader.ui.active.inverted.dimmer
           .ui.text.loader loading
       section.unconf.schedule(data-use-schedule='unconf')
-        .loader.ui.active.inverted.dimmer
+        //.loader.ui.active.inverted.dimmer
           .ui.text.loader loading
     section#advertisement.align.center
       .horizontal.wrap
