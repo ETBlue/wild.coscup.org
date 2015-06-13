@@ -4,15 +4,23 @@
 #program #announcement {
   background-color: rgba(255, 0, 0, 0.1);
 }
-#program #sessions .ui.grid {
+#program .schedule {
+  position: relative;
+  display: none;
+  padding: 1rem 0;
+}
+#program .schedule.active {
+  display: block;
+}
+#program .schedule .ui.grid {
   margin: 0;
   padding: 0;
   padding-left: 4rem;
 }
-#program #sessions .ui.grid .slot {
+#program .schedule .ui.grid .slot {
   position: relative;
 }
-#program #sessions .ui.grid .slot .time {
+#program .schedule .ui.grid .slot .time {
   position: absolute;
   left: -4rem;
   top: 0;
@@ -20,42 +28,42 @@
   width: 3.5rem;
   text-align: right;
 }
-#program #sessions .ui.grid .row {
+#program .schedule .ui.grid .row {
   margin: 0;
   padding: 0.25rem;
   overflow-x: scroll;
   white-space: nowrap;
 }
-#program #sessions .ui.grid .row.expired {
+#program .schedule .ui.grid .row.expire {
   opacity: 0.8;
   height: 4rem;
 }
-#program #sessions .ui.grid .row.expired .segment {
+#program .schedule .ui.grid .row.expire .segment {
   background-color: rgba(255, 255, 255, 0);
 }
-#program #sessions .ui.grid .row.active {
+#program .schedule .ui.grid .row.active {
   -moz-border-radius: 0.5rem;
   -webkit-border-radius: 0.5rem;
   border-radius: 0.5rem;
   border: 2px red solid;
 }
-#program #sessions .ui.grid .row .column {
+#program .schedule .ui.grid .row .column {
   white-space: normal;
   margin: 0;
   padding: 0;
   min-width: 120px;
 }
-#program #sessions .ui.grid .row .column .segment {
+#program .schedule .ui.grid .row .column .segment {
   padding: 0.5rem;
 }
-#program #sessions .ui.grid .row .column .segment i.icon:last-child {
+#program .schedule .ui.grid .row .column .segment i.icon:last-child {
   margin-left: 0.5em;
   margin-right: 0;
 }
-#program #sessions .ui.grid .row .column .segment .ui.label:first-child {
+#program .schedule .ui.grid .row .column .segment .ui.label:first-child {
   margin-left: 0;
   margin-right: 0.5em;
 }
-#program #sessions .ui.grid .row .column .segment .message {
+#program .schedule .ui.grid .row .column .segment .message {
   padding: 0.5rem;
 }

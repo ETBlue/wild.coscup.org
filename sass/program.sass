@@ -20,7 +20,12 @@ $github: #111
     background-color: hsla(210,50,80,1)
   #announcement
     background-color: rgba(red,0.1)
-  #sessions
+  .schedule
+    position: relative
+    display: none
+    padding: 1rem 0
+    &.active
+      display: block
     .ui.grid
       margin: 0
       padding: 0
@@ -39,7 +44,7 @@ $github: #111
         padding: 0.25rem
         overflow-x: scroll
         white-space: nowrap
-        &.expired
+        &.expire
           opacity: 0.8
           height: 4rem
           .segment
