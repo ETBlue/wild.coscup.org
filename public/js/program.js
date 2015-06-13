@@ -13,7 +13,7 @@ $(function() {
     //移除loading UI
     $('#loader').remove();
     //插入排程相關內容
-    // insertScheduleContent();
+    insertScheduleContent();
     //綁定schedule相關事件
     bindScheduleEvent();
     //啟動倒數計時
@@ -78,6 +78,7 @@ function insertScheduleContent() {
     var scheduleData
     var putContent;
     var language;
+    var html;
     if (!scheduleSetting || !scheduleSetting.data) {
       return false;
     }
@@ -85,14 +86,25 @@ function insertScheduleContent() {
     if (!scheduleData) {
       return false;
     }
+    putColumn = $this.attr('data-schedule-column');
+    switch (putColumn) {
     //若需置入的是content    
-    if ($this.attr('data-schedule-content') !== undefined) {
-      $this.text( scheduleData.content ? scheduleData.content.replace(/\n/g, '<br />') : '' );
-    }
+    case 'content':
+      $this.html( scheduleData.content ? scheduleData.content.replace(/\n/g, '<br />') : '' );
+      break;
     //若需置入的是language
-    else if ($this.attr('data-schedule-language') !== undefined) {
-      language = scheduleData.language;
-      $this.text( scheduleData.content ? scheduleData.content.replace(/\n/g, '<br />') : '' );
+    case 'language':
+      language = scheduleData.language || '';
+      html = '';
+      _.each(language.split(','), function(lang) {
+        html += '<span class="language ' + lang.replace(/^\s+|\s+$/g, '') + '"></span>';
+      });
+      $this.html( html );
+      break;
+    //若需置入的是其他欄位
+    default:
+      $this.text( scheduleData.speaker ? scheduleData.speaker.replace(/^\s+|\s+$/g, '') : '' );
+      break;
     }
   });
 }
