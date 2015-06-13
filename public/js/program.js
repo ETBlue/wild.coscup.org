@@ -14,8 +14,10 @@ $(function() {
     $('#loader').remove();
     //插入排程相關內容
     insertScheduleContent();
-    //綁定schedule相關事件
+    //綁定排程相關事件
     bindScheduleEvent();
+    //綁定like相關事件
+    bindLikeEvent();
     //啟動倒數計時
     activeCountDown();
   });
@@ -134,6 +136,45 @@ function bindScheduleEvent() {
   });
   //初始化後啟動預設的schedule
   changeActiveScheduleTo(CONFIG.defaultSchedule);
+}
+
+//綁定like相關事件
+function bindLikeEvent() {
+  var likeSchedule = STORE('likeSchedule') || [];
+  //將所有喜歡的schedule加上beLike class
+  _.each(likeSchedule, function(scheduleId) {
+    makeLikeSchedule(scheduleId);
+  });
+  //切換「是否要顯示like schedule不同」模式
+  $('body').on('click', '[data-toggle-like]', function() {
+    $('body').toggleClass('showLikeScheduleDifference');
+  });
+  //使用者喜愛/取消喜愛特定schedule時
+  $('body').on('click', '[data-like-schedule]', function() {
+    var $this = $(this);
+    var scheduleId = $this.attr('data-like-schedule');
+    //若尚未喜愛，加入喜愛
+    if (_.indexOf(likeSchedule, scheduleId) === -1) {
+      likeSchedule.push(scheduleId);
+      makeLikeSchedule(scheduleId);
+    }
+    //若已喜愛，移除喜愛
+    else {
+      likeSchedule = _.without(likeSchedule, scheduleId);
+      makeUnLikeSchedule();
+    }
+    STORE('likeSchedule', likeSchedule);
+  });
+};
+
+function makeLikeSchedule(scheduleId) {
+  $('[data-schedule-id="' + scheduleId + '"]').addClass('beLike');
+  $('[data-like-schedule="' + scheduleId + '"]').addClass('active');
+}
+
+function makeUnLikeSchedule(scheduleId) {
+  $('[data-schedule-id="' + scheduleId + '"]').removeClass('beLike');
+  $('[data-like-schedule="' + scheduleId + '"]').removeClass('active');
 }
 
 //啟動倒數計時
