@@ -9,7 +9,7 @@ $(function() {
     //移除loading UI
     $('#loader').remove();
     //綁定schedule相關事件
-    // bindScheduleEvent();
+    bindScheduleEvent();
     //啟動倒數計時
     activeCountDown();
   });

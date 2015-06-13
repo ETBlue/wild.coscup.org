@@ -14,5 +14,6 @@ CONFIG = {
     unconf: {
       url: '1FtOxGJRvi-8iRRPEFfgXGASvS5RjDWh0tcVPBmoU0JA'
     }
-  }
+  },
+  defaultSchedule: 'session'
 };
