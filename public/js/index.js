@@ -1,13 +1,19 @@
 
 //儲存倒數計時html jQuery物件快取
 var $countDown;
+var $activeItem;
+var $expireItem;
 $(function() {
   //開始快取需要用到的jQuery物件
   $countDown = $('[data-countdown-html][data-use-schedule]');
+  $activeOnTimeItem = $('[data-active-on]');
+  $expireOnTimeItem = $('[data-expire-on]');
   //載入排程資料
   loadSchduleData().done(function() {
     //移除loading UI
     $('#loader').remove();
+    //插入排程相關內容
+    // insertScheduleContent();
     //綁定schedule相關事件
     bindScheduleEvent();
     //啟動倒數計時
@@ -59,6 +65,36 @@ function parseScheduleData(scheduleData) {
   result.activeTime = moment(scheduleData.activeTime + ' ' + CONFIG.timezone, CONFIG.timeformat + ' ZZ');
   result.expireTime = moment(scheduleData.expireTime + ' ' + CONFIG.timezone, CONFIG.timeformat + ' ZZ');
   return result;
+}
+
+//插入排程相關內容
+function insertScheduleContent() {
+  var $scheduleNeedContent = $('[data-use-schedule][data-schedule-id]');
+  $scheduleNeedContent.each(function() {
+    var $this = $(this);
+    var useSchedule = $this.attr('data-use-schedule');
+    var scheduleSetting = CONFIG.schedule[ useSchedule ];
+    var scheduleId = $this.attr('data-schedule-id');
+    var scheduleData
+    var putContent;
+    var language;
+    if (!scheduleSetting || !scheduleSetting.data) {
+      return false;
+    }
+    scheduleData = scheduleSetting.data[ scheduleId ];
+    if (!scheduleData) {
+      return false;
+    }
+    //若需置入的是content    
+    if ($this.attr('data-schedule-content') !== undefined) {
+      $this.text( scheduleData.content ? scheduleData.content.replace(/\n/g, '<br />') : '' );
+    }
+    //若需置入的是language
+    else if ($this.attr('data-schedule-language') !== undefined) {
+      language = scheduleData.language;
+      $this.text( scheduleData.content ? scheduleData.content.replace(/\n/g, '<br />') : '' );
+    }
+  });
 }
 
 //綁定排程相關事件
@@ -145,6 +181,22 @@ function countDown() {
     }
     else {
       $thisCountDown.remove();
+    }
+  });
+  //替超過時間的active on time item加上active class
+  $activeOnTimeItem.not('.active').each(function() {
+    var $this = $(this);
+    var activeTime = parseInt($this.attr('data-active-on'), 10);
+    if (activeTime >= now.valueOf()) {
+      $this.addClass("active");
+    }
+  });
+  //替超過時間的expire on time item加上expire class
+  $expireOnTimeItem.not('.expire').each(function() {
+    var $this = $(this);
+    var activeTime = parseInt($this.attr('data-expire-on'), 10);
+    if (activeTime >= now.valueOf()) {
+      $this.addClass("expire");
     }
   });
 }
