@@ -57,14 +57,16 @@
           <div class="ui segment simplified blue inverted">
             <h1 class="ui header">議程
             </h1>
-            <div id="countdown"><span class="inline block">籌備中！</span><span class="inline block">距離活動開始還有</span><span class="inline block">__ 天 __ 小時 __ 分 __ 秒</span></div>
+            <div data-use-schedule="session" data-countdown-html="" class="countdown"></div>
+            <div data-use-schedule="workshop" data-countdown-html="" class="countdown"></div>
+            <div data-use-schedule="unconf" data-countdown-html="" class="countdown"></div>
           </div>
         </div>
       </header>
       <section id="filter">
         <div class="horizontal wrap">
-          <div class="ui menu simplified fluid two item blue inverted no margin"><a class="item active">Day 1
-              <div class="ui label">8/15 Sat.</div></a><a class="item">Day 2
+          <div class="ui menu simplified fluid two item blue inverted no margin"><a data-active-time="" data-expire-time="" class="item active">Day 1
+              <div class="ui label">8/15 Sat.</div></a><a data-active-time="" data-expire-time="" class="item">Day 2
               <div class="ui label">8/16 Sun.</div></a></div>
           <div class="ui secondary pointing menu no margin"><a class="item blue active">五軌議程
               <!--.ui.label.blue 5--></a><a class="item teal">三軌工作坊
@@ -74,14 +76,17 @@
               <div class="ui label yellow">10</div></a></div>
         </div>
       </section>
-      <section id="sessions" class="vertical padding">
+      <section id="session" data-use-schedule="session" class="active schedule">
+        <div id="loader" class="ui active inverted dimmer">
+          <div class="ui text loader">loading</div>
+        </div>
         <div class="horizontal wrap">
           <div class="ui grid five column">
             <div class="slot">
               <div class="time">9:00</div>
             </div>
-            <div class="row expired">
-              <div class="column">
+            <div data-active-time="" data-expire-time="" class="row expire">
+              <div data-schedule-id="" class="column">
                 <div class="ui segment"><a class="ui top attached label black room"><span>國際會議廳</span><i class="icon location arrow float right"></i></a>
                   <div class="ui small header dividing no margin"><span>State of the unison: g0v 村情咨文</span></div>
                   <div class="speaker">clkao</div>
@@ -90,10 +95,10 @@
                     <div class="ui horizontal mini label disabled">En<i class="translate icon"></i></div>
                   </div>
                   <!--.ui.message.orange 延後十分鐘開始-->
-                  <div class="ui hidden divider"></div><a class="ui bottom attached label"><i class="star icon right float"></i></a>
+                  <div class="ui hidden divider"></div><a data-like="" class="ui bottom attached label"><i class="star icon right float"></i></a>
                 </div>
               </div>
-              <div class="column">
+              <div data-schedule-id="" class="column">
                 <div class="ui segment"><a class="ui top attached label black room"><span>第一會議室</span><i class="icon location arrow float right"></i></a>
                   <div class="ui small header dividing no margin"><span>從沒有人到超多人：g0v社群經驗，測試很長的標題</span></div>
                   <div class="speaker">ipa</div>
@@ -101,10 +106,10 @@
                     <div class="ui horizontal mini label">中</div>
                     <div class="ui horizontal mini label disabled">En<i class="translate icon"></i></div>
                   </div>
-                  <div class="ui hidden divider"></div><a class="ui bottom attached label yellow"><i class="star icon right float"></i></a>
+                  <div class="ui hidden divider"></div><a data-like="" class="ui bottom attached label yellow"><i class="star icon right float"></i></a>
                 </div>
               </div>
-              <div class="column">
+              <div data-schedule-id="" class="column">
                 <div class="ui segment"><a class="ui top attached label black room"><span>國際會議廳</span><i class="icon location arrow float right"></i></a>
                   <div class="ui small header dividing no margin"><span>State of the unison: g0v 村情咨文</span></div>
                   <div class="speaker">clkao</div>
@@ -113,10 +118,10 @@
                     <div class="ui horizontal mini label disabled">En<i class="translate icon"></i></div>
                   </div>
                   <!--.ui.message.orange 延後十分鐘開始-->
-                  <div class="ui hidden divider"></div><a class="ui bottom attached label"><i class="star icon right float"></i></a>
+                  <div class="ui hidden divider"></div><a data-like="" class="ui bottom attached label"><i class="star icon right float"></i></a>
                 </div>
               </div>
-              <div class="column">
+              <div data-schedule-id="" class="column">
                 <div class="ui segment"><a class="ui top attached label black room"><span>第一會議室</span><i class="icon location arrow float right"></i></a>
                   <div class="ui small header dividing no margin"><span>從沒有人到超多人：g0v社群經驗，測試很長的標題</span></div>
                   <div class="speaker">ipa</div>
@@ -124,10 +129,10 @@
                     <div class="ui horizontal mini label">中</div>
                     <div class="ui horizontal mini label disabled">En<i class="translate icon"></i></div>
                   </div>
-                  <div class="ui hidden divider"></div><a class="ui bottom attached label yellow"><i class="star icon right float"></i></a>
+                  <div class="ui hidden divider"></div><a data-like="" class="ui bottom attached label yellow"><i class="star icon right float"></i></a>
                 </div>
               </div>
-              <div class="column">
+              <div data-schedule-id="" class="column">
                 <div class="ui segment"><a class="ui top attached label black room"><span>國際會議廳</span><i class="icon location arrow float right"></i></a>
                   <div class="ui small header dividing no margin"><span>State of the unison: g0v 村情咨文</span></div>
                   <div class="speaker">clkao</div>
@@ -136,21 +141,21 @@
                     <div class="ui horizontal mini label disabled">En<i class="translate icon"></i></div>
                   </div>
                   <!--.ui.message.orange 延後十分鐘開始-->
-                  <div class="ui hidden divider"></div><a class="ui bottom attached label"><i class="star icon right float"></i></a>
+                  <div class="ui hidden divider"></div><a data-like="" class="ui bottom attached label"><i class="star icon right float"></i></a>
                 </div>
               </div>
             </div>
             <div class="slot">
               <div class="time">10:00</div>
             </div>
-            <div class="row expired">
+            <div data-active-time="" data-expire-time="" class="row expire">
               <div class="ui horizontal divider">break</div>
             </div>
             <div class="slot">
               <div class="time">11:00</div>
             </div>
-            <div class="row active">
-              <div class="column">
+            <div data-active-time="" data-expire-time="" class="row active">
+              <div data-schedule-id="" class="column">
                 <div class="ui segment"><a class="ui top attached label black room"><span>第一會議室</span><i class="icon location arrow float right"></i></a>
                   <div class="ui small header dividing no margin"><span>從沒有人到超多人：g0v社群經驗，測試很長的標題</span></div>
                   <div class="speaker">ipa</div>
@@ -158,10 +163,10 @@
                     <div class="ui horizontal mini label">中</div>
                     <div class="ui horizontal mini label disabled">En<i class="translate icon"></i></div>
                   </div>
-                  <div class="ui hidden divider"></div><a class="ui bottom attached label yellow"><i class="star icon right float"></i></a>
+                  <div class="ui hidden divider"></div><a data-like="" class="ui bottom attached label yellow"><i class="star icon right float"></i></a>
                 </div>
               </div>
-              <div class="column">
+              <div data-schedule-id="" class="column">
                 <div class="ui segment"><a class="ui top attached label black room"><span>國際會議廳</span><i class="icon location arrow float right"></i></a>
                   <div class="ui small header dividing no margin"><span>State of the unison: g0v 村情咨文</span></div>
                   <div class="speaker">clkao</div>
@@ -170,10 +175,10 @@
                     <div class="ui horizontal mini label disabled">En<i class="translate icon"></i></div>
                   </div>
                   <!--.ui.message.orange 延後十分鐘開始-->
-                  <div class="ui hidden divider"></div><a class="ui bottom attached label"><i class="star icon right float"></i></a>
+                  <div class="ui hidden divider"></div><a data-like="" class="ui bottom attached label"><i class="star icon right float"></i></a>
                 </div>
               </div>
-              <div class="column">
+              <div data-schedule-id="" class="column">
                 <div class="ui segment"><a class="ui top attached label black room"><span>第一會議室</span><i class="icon location arrow float right"></i></a>
                   <div class="ui small header dividing no margin"><span>從沒有人到超多人：g0v社群經驗，測試很長的標題</span></div>
                   <div class="speaker">ipa</div>
@@ -181,10 +186,10 @@
                     <div class="ui horizontal mini label">中</div>
                     <div class="ui horizontal mini label disabled">En<i class="translate icon"></i></div>
                   </div>
-                  <div class="ui hidden divider"></div><a class="ui bottom attached label yellow"><i class="star icon right float"></i></a>
+                  <div class="ui hidden divider"></div><a data-like="" class="ui bottom attached label yellow"><i class="star icon right float"></i></a>
                 </div>
               </div>
-              <div class="column">
+              <div data-schedule-id="" class="column">
                 <div class="ui segment"><a class="ui top attached label black room"><span>國際會議廳</span><i class="icon location arrow float right"></i></a>
                   <div class="ui small header dividing no margin"><span>State of the unison: g0v 村情咨文</span></div>
                   <div class="speaker">clkao</div>
@@ -193,10 +198,10 @@
                     <div class="ui horizontal mini label disabled">En<i class="translate icon"></i></div>
                   </div>
                   <!--.ui.message.orange 延後十分鐘開始-->
-                  <div class="ui hidden divider"></div><a class="ui bottom attached label"><i class="star icon right float"></i></a>
+                  <div class="ui hidden divider"></div><a data-like="" class="ui bottom attached label"><i class="star icon right float"></i></a>
                 </div>
               </div>
-              <div class="column">
+              <div data-schedule-id="" class="column">
                 <div class="ui segment"><a class="ui top attached label black room"><span>第一會議室</span><i class="icon location arrow float right"></i></a>
                   <div class="ui small header dividing no margin"><span>從沒有人到超多人：g0v社群經驗，測試很長的標題</span></div>
                   <div class="speaker">ipa</div>
@@ -204,21 +209,21 @@
                     <div class="ui horizontal mini label">中</div>
                     <div class="ui horizontal mini label disabled">En<i class="translate icon"></i></div>
                   </div>
-                  <div class="ui hidden divider"></div><a class="ui bottom attached label yellow"><i class="star icon right float"></i></a>
+                  <div class="ui hidden divider"></div><a data-like="" class="ui bottom attached label yellow"><i class="star icon right float"></i></a>
                 </div>
               </div>
             </div>
             <div class="slot">
               <div class="time">12:00</div>
             </div>
-            <div class="row">
+            <div data-active-time="" data-expire-time="" class="row">
               <div class="ui horizontal divider">break</div>
             </div>
             <div class="slot">
               <div class="time">13:00</div>
             </div>
-            <div class="row">
-              <div class="column">
+            <div data-active-time="" data-expire-time="" class="row">
+              <div data-schedule-id="" class="column">
                 <div class="ui segment"><a class="ui top attached label black room"><span>第一會議室</span><i class="icon location arrow float right"></i></a>
                   <div class="ui small header dividing no margin"><span>從沒有人到超多人：g0v社群經驗，測試很長的標題</span></div>
                   <div class="speaker">ipa</div>
@@ -226,10 +231,10 @@
                     <div class="ui horizontal mini label">中</div>
                     <div class="ui horizontal mini label disabled">En<i class="translate icon"></i></div>
                   </div>
-                  <div class="ui hidden divider"></div><a class="ui bottom attached label yellow"><i class="star icon right float"></i></a>
+                  <div class="ui hidden divider"></div><a data-like="" class="ui bottom attached label yellow"><i class="star icon right float"></i></a>
                 </div>
               </div>
-              <div class="column">
+              <div data-schedule-id="" class="column">
                 <div class="ui segment"><a class="ui top attached label black room"><span>國際會議廳</span><i class="icon location arrow float right"></i></a>
                   <div class="ui small header dividing no margin"><span>State of the unison: g0v 村情咨文</span></div>
                   <div class="speaker">clkao</div>
@@ -238,10 +243,10 @@
                     <div class="ui horizontal mini label disabled">En<i class="translate icon"></i></div>
                   </div>
                   <!--.ui.message.orange 延後十分鐘開始-->
-                  <div class="ui hidden divider"></div><a class="ui bottom attached label"><i class="star icon right float"></i></a>
+                  <div class="ui hidden divider"></div><a data-like="" class="ui bottom attached label"><i class="star icon right float"></i></a>
                 </div>
               </div>
-              <div class="column">
+              <div data-schedule-id="" class="column">
                 <div class="ui segment"><a class="ui top attached label black room"><span>第一會議室</span><i class="icon location arrow float right"></i></a>
                   <div class="ui small header dividing no margin"><span>從沒有人到超多人：g0v社群經驗，測試很長的標題</span></div>
                   <div class="speaker">ipa</div>
@@ -249,10 +254,10 @@
                     <div class="ui horizontal mini label">中</div>
                     <div class="ui horizontal mini label disabled">En<i class="translate icon"></i></div>
                   </div>
-                  <div class="ui hidden divider"></div><a class="ui bottom attached label yellow"><i class="star icon right float"></i></a>
+                  <div class="ui hidden divider"></div><a data-like="" class="ui bottom attached label yellow"><i class="star icon right float"></i></a>
                 </div>
               </div>
-              <div class="column">
+              <div data-schedule-id="" class="column">
                 <div class="ui segment"><a class="ui top attached label black room"><span>國際會議廳</span><i class="icon location arrow float right"></i></a>
                   <div class="ui small header dividing no margin"><span>State of the unison: g0v 村情咨文</span></div>
                   <div class="speaker">clkao</div>
@@ -261,10 +266,10 @@
                     <div class="ui horizontal mini label disabled">En<i class="translate icon"></i></div>
                   </div>
                   <!--.ui.message.orange 延後十分鐘開始-->
-                  <div class="ui hidden divider"></div><a class="ui bottom attached label"><i class="star icon right float"></i></a>
+                  <div class="ui hidden divider"></div><a data-like="" class="ui bottom attached label"><i class="star icon right float"></i></a>
                 </div>
               </div>
-              <div class="column">
+              <div data-schedule-id="" class="column">
                 <div class="ui segment"><a class="ui top attached label black room"><span>第一會議室</span><i class="icon location arrow float right"></i></a>
                   <div class="ui small header dividing no margin"><span>從沒有人到超多人：g0v社群經驗，測試很長的標題</span></div>
                   <div class="speaker">ipa</div>
@@ -272,20 +277,32 @@
                     <div class="ui horizontal mini label">中</div>
                     <div class="ui horizontal mini label disabled">En<i class="translate icon"></i></div>
                   </div>
-                  <div class="ui hidden divider"></div><a class="ui bottom attached label yellow"><i class="star icon right float"></i></a>
+                  <div class="ui hidden divider"></div><a data-like="" class="ui bottom attached label yellow"><i class="star icon right float"></i></a>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+      <section id="workshop" data-display="workshop" class="schedule">
+        <div id="loader" class="ui active inverted dimmer">
+          <div class="ui text loader">loading</div>
+        </div>
+      </section>
+      <section id="unconf" data-display="unconf" class="schedule">
+        <div id="loader" class="ui active inverted dimmer">
+          <div class="ui text loader">loading</div>
+        </div>
+      </section>
+      <section id="advertisement" class="align center">
+        <div class="horizontal wrap">
+          <div class="ui orange inverted segment simplified">感謝 kktix 熱情贊助 COSCUP 2015</div>
+        </div>
+      </section>
       <section id="announcement" class="align center">
         <div class="horizontal wrap">
           <div class="ui red inverted segment simplified"><i class="icon announcement"></i><span>大會公告：遺失物品請到櫃臺領取</span></div>
         </div>
-      </section>
-      <section id="advertisement" class="align center">
-        <div class="horizontal wrap"></div>
       </section>
     </div>
     <footer id="bottombar">
