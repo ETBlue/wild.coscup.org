@@ -188,15 +188,15 @@ function countDown() {
     var $this = $(this);
     var activeTime = parseInt($this.attr('data-active-on'), 10);
     if (activeTime >= now.valueOf()) {
-      $this.addClass("active");
+      $this.addClass('active');
     }
   });
-  //替超過時間的expire on time item加上expire class
+  //替超過時間的expire on time item加上expire class移除active class
   $expireOnTimeItem.not('.expire').each(function() {
     var $this = $(this);
-    var activeTime = parseInt($this.attr('data-expire-on'), 10);
-    if (activeTime >= now.valueOf()) {
-      $this.addClass("expire");
+    var expireTime = parseInt($this.attr('data-expire-on'), 10);
+    if (expireTime >= now.valueOf()) {
+      $this.removeClass('active').addClass('expire');
     }
   });
 }
