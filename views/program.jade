@@ -87,33 +87,33 @@ block content
           .ui.text.loader loading
         .horizontal.wrap
           .ui.grid.five.column
-            .slot
-              .time 9:00
             .row(data-active-on='',data-expire-on='').expire
+              .slot
+                .time 9:00
               include -session1
               include -session2
               include -session1
               include -session2
               include -session1
-            .slot
-              .time 10:00
             .row(data-active-on='',data-expire-on='').expire
+              .slot
+                .time 10:00
               .ui.horizontal.divider break
-            .slot
-              .time 11:00
             .row(data-active-on='',data-expire-on='').active
+              .slot
+                .time 11:00
               include -session2
               include -session1
               include -session2
               include -session1
               include -session2
-            .slot
-              .time 12:00
             .row(data-active-on='',data-expire-on='')
+              .slot
+                .time 12:00
               .ui.horizontal.divider break
-            .slot
-              .time 13:00
             .row(data-active-on='',data-expire-on='')
+              .slot
+                .time 13:00
               include -session2
               include -session1
               include -session2
@@ -142,7 +142,7 @@ block footer
   script(type='text/javascript', src='js/moment.js')
   script(type='text/javascript', src='js/program.js')
 
-  // jquery address
+  // jquery address for semantic ui tab
   script(type="text/javascript",src="assets/jquery.address.js")
 
 block script
@@ -157,6 +157,10 @@ block script
         //context: $('#program')
       }).on('click tap', function(){
         window.scrollTo(0, 0);
+      });
+
+      $('.row.expire').on('click tap',function(){
+        $(this).toggleClass('expanded');
       });
 
     });

@@ -31,12 +31,13 @@
 #program .schedule .ui.grid .row {
   margin: 0;
   padding: 0.25rem;
-  overflow-x: scroll;
+  overflow-x: auto;
+  overflow-y: hidden;
   white-space: nowrap;
 }
 #program .schedule .ui.grid .row.expire {
   opacity: 0.8;
-  height: 4rem;
+  display: none;
 }
 #program .schedule .ui.grid .row.expire .segment {
   background-color: rgba(255, 255, 255, 0);
@@ -47,23 +48,23 @@
   border-radius: 0.5rem;
   border: 2px red solid;
 }
-#program .schedule .ui.grid .row .column {
+#program .schedule .ui.grid .column {
   white-space: normal;
   margin: 0;
   padding: 0;
   min-width: 120px;
 }
-#program .schedule .ui.grid .row .column .segment {
+#program .schedule .ui.grid .column .segment {
   padding: 0.5rem;
 }
-#program .schedule .ui.grid .row .column .segment i.icon:last-child {
+#program .schedule .ui.grid .column .segment i.icon:last-child {
   margin-left: 0.5em;
   margin-right: 0;
 }
-#program .schedule .ui.grid .row .column .segment .ui.label:first-child {
+#program .schedule .ui.grid .column .segment .ui.label:first-child {
   margin-left: 0;
   margin-right: 0.5em;
 }
-#program .schedule .ui.grid .row .column .segment .message {
+#program .schedule .ui.grid .column .segment .message {
   padding: 0.5rem;
 }
