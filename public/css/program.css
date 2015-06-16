@@ -1,6 +1,9 @@
 #program #header {
   background-color: #b3cce6;
 }
+#program #filter #schedule-expand-button .collapse {
+  display: none;
+}
 #program #announcement {
   background-color: rgba(255, 0, 0, 0.1);
 }
@@ -15,22 +18,11 @@
 #program .schedule .ui.grid {
   margin: 0;
   padding: 0;
-  padding-left: 4rem;
-}
-#program .schedule .ui.grid .slot {
-  position: relative;
-}
-#program .schedule .ui.grid .slot .time {
-  position: absolute;
-  left: -4rem;
-  top: 0;
-  font-size: 1rem;
-  width: 3.5rem;
-  text-align: right;
 }
 #program .schedule .ui.grid .row {
   margin: 0;
   padding: 0.25rem;
+  padding-left: 4rem;
   overflow-x: auto;
   overflow-y: hidden;
   white-space: nowrap;
@@ -48,23 +40,35 @@
   border-radius: 0.5rem;
   border: 2px red solid;
 }
-#program .schedule .ui.grid .column {
+#program .schedule .ui.grid .row .slot {
+  position: relative;
+  font-size: 1rem;
+}
+#program .schedule .ui.grid .row .slot .time {
+  position: absolute;
+  left: -4rem;
+  top: 0;
+  font-size: 1rem;
+  width: 3.5rem;
+  text-align: right;
+}
+#program .schedule .ui.grid .row .column {
   white-space: normal;
   margin: 0;
   padding: 0;
   min-width: 120px;
 }
-#program .schedule .ui.grid .column .segment {
+#program .schedule .ui.grid .row .column .segment {
   padding: 0.5rem;
 }
-#program .schedule .ui.grid .column .segment i.icon:last-child {
+#program .schedule .ui.grid .row .column .segment i.icon:last-child {
   margin-left: 0.5em;
   margin-right: 0;
 }
-#program .schedule .ui.grid .column .segment .ui.label:first-child {
+#program .schedule .ui.grid .row .column .segment .ui.label:first-child {
   margin-left: 0;
   margin-right: 0.5em;
 }
-#program .schedule .ui.grid .column .segment .message {
+#program .schedule .ui.grid .row .column .segment .message {
   padding: 0.5rem;
 }

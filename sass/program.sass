@@ -18,6 +18,10 @@ $github: #111
 #program
   #header
     background-color: hsla(210,50,80,1)
+  #filter
+    #schedule-expand-button
+      .collapse
+        display: none
   #announcement
     background-color: rgba(red,0.1)
   .schedule
@@ -29,27 +33,16 @@ $github: #111
     .ui.grid
       margin: 0
       padding: 0
-      padding-left: 4rem
-      .slot
-        position: relative
-        .time
-          position: absolute
-          left: -4rem
-          top: 0
-          font-size: 1rem
-          width: 3.5rem
-          text-align: right
       .row
         margin: 0
         padding: 0.25rem
+        padding-left: 4rem
         overflow-x: auto
         overflow-y: hidden
         white-space: nowrap
         &.expire
           opacity: 0.8
           display: none
-          //-&.expanded
-            height: auto
           .segment
             background-color: rgba(#fff,0)
         &.active
@@ -57,18 +50,28 @@ $github: #111
           border: 2px hsla(0,100,50,1) solid
           //+box-shadow(0 0 5px hsla(0,100,50,1))
           //background-color: hsla(0,100,50,0.5)
-      .column
-        white-space: normal
-        margin: 0
-        padding: 0
-        min-width: 120px
-        .segment
-          padding: 0.5rem
-          i.icon:last-child
-            margin-left: 0.5em
-            margin-right: 0
-          .ui.label:first-child
-            margin-left: 0
-            margin-right: 0.5em
-          .message
+        .slot
+          position: relative
+          font-size: 1rem
+          .time
+            position: absolute
+            left: -4rem
+            top: 0
+            font-size: 1rem
+            width: 3.5rem
+            text-align: right
+        .column
+          white-space: normal
+          margin: 0
+          padding: 0
+          min-width: 120px
+          .segment
             padding: 0.5rem
+            i.icon:last-child
+              margin-left: 0.5em
+              margin-right: 0
+            .ui.label:first-child
+              margin-left: 0
+              margin-right: 0.5em
+            .message
+              padding: 0.5rem
