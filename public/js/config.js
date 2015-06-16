@@ -5,15 +5,15 @@ CONFIG = {
   timezone: '+08:00',
   //schedule設定
   schedule: {
-    session: {
+    speech: {
       url: '1FtOxGJRvi-8iRRPEFfgXGASvS5RjDWh0tcVPBmoU0JA'
     },
     workshop: {
-      url: '1FtOxGJRvi-8iRRPEFfgXGASvS5RjDWh0tcVPBmoU0JA'
+      url: '1c7HZzw9USb_Ou0Rv05_PDQF-tKK0Y5DhiZQZ00aRvmk'
     },
     unconf: {
-      url: '1FtOxGJRvi-8iRRPEFfgXGASvS5RjDWh0tcVPBmoU0JA'
+      url: '1c7HZzw9USb_Ou0Rv05_PDQF-tKK0Y5DhiZQZ00aRvmk'
     }
   },
-  defaultSchedule: 'session'
+  defaultSchedule: 'speech'
 };
