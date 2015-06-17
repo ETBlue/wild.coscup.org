@@ -11,23 +11,23 @@ block body
   nav#topbar
     //-.ui.borderless.secondary.menu.simplified.horizontal.wrap
     .ui.borderless.menu.simplified.horizontal.wrap
-      .desktop.laptop
+      .desktop.laptop.tablet
         //a.logo.item(href="index")
           img.logo.image(src="img/logo.png")
         a.item(href="index")
           | COSCUP 2015
         include -level-one-nav
-      .tablet.phone
+      .phone
         //.ui.simple.dropdown.logo.item
-        .item
-          | COSCUP 2015
+        a.item(href="index") COSCUP 2015
         .ui.simple.dropdown.item
-          | 首頁
+          block title
           //img.logo.image(src="img/logo.png")
           i.icon.dropdown
           .menu
-            a.item(href="index") 首頁
             include -level-one-nav
+            include -level-one-nav-second
+            include -level-one-nav-third
       .right.menu
         a.item(href="join")
           i.icon.pointing.right

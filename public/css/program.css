@@ -38,17 +38,11 @@
     display: none;
   }
 }
-#program #banner .grid {
-  margin: 0;
-  padding: 0;
+#program #banner #advertisement {
+  background-color: rgba(245, 204, 163, 0.5);
 }
-#program #banner .row {
-  margin: 0;
-  padding: 0;
-}
-#program #banner .column {
-  margin: 0;
-  padding: 0;
+#program #banner #announcement {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 #program .schedule {
   position: relative;

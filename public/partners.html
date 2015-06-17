@@ -28,22 +28,21 @@
   <body>
     <nav id="topbar">
       <div class="ui borderless menu simplified horizontal wrap">
-        <div class="desktop laptop">
+        <div class="desktop laptop tablet">
           <!--a.logo.item(href="index")img.logo.image(src="img/logo.png")
           --><a href="index" class="item">COSCUP 2015</a><a href="news" class="item">
             <!--i.icon.rss-->新聞</a><a href="program" class="item">
             <!--i.icon.calendar-->議程</a><a href="venue" class="item">
             <!--i.icon.map.marker-->交通資訊</a>
         </div>
-        <div class="tablet phone">
-          <!--.ui.simple.dropdown.logo.item-->
-          <div class="item">COSCUP 2015</div>
-          <div class="ui simple dropdown item">首頁
+        <div class="phone">
+          <!--.ui.simple.dropdown.logo.item--><a href="index" class="item">COSCUP 2015</a>
+          <div class="ui simple dropdown item">媒體與合作夥伴
             <!--img.logo.image(src="img/logo.png")--><i class="icon dropdown"></i>
-            <div class="menu"><a href="index" class="item">首頁</a><a href="news" class="item">
+            <div class="menu"><a href="news" class="item">
                 <!--i.icon.rss-->新聞</a><a href="program" class="item">
                 <!--i.icon.calendar-->議程</a><a href="venue" class="item">
-                <!--i.icon.map.marker-->交通資訊</a></div>
+                <!--i.icon.map.marker-->交通資訊</a><a href="speakers" class="item">講者</a><a href="staff" class="item">工作人員</a><a href="partners" class="item">合作夥伴</a><a href="community" class="item">社群交流區</a><a href="about" class="item">關於</a><a target="_blank" href="http://COSCUP.org/" class="item">COSCUP 正版官網<i class="icon external square"></i></a></div>
           </div>
         </div>
         <div class="right menu"><a href="join" class="item"><i class="icon pointing right"></i><span class="desktop laptop tablet">參加！</span></a><a href="partners" class="item"><i class="icon money"></i><span class="desktop laptop tablet">贊助！</span></a>
@@ -52,14 +51,8 @@
     </nav>
     <div id="partners" class="horizontal wrap"></div>
     <footer id="bottombar">
-      <div class="ui borderless menu simplified horizontal wrap">
-        <div class="desktop laptop tablet"><a href="speakers" class="item">講者</a><a href="staff" class="item">工作人員</a><a href="partners" class="item">合作夥伴</a><a href="community" class="item">社群交流區</a></div>
-        <div class="phone">
-          <div class="ui simple dropdown item">參與者<i class="icon dropdown"></i>
-            <div class="menu"><a href="speakers" class="item">講者</a><a href="staff" class="item">工作人員</a><a href="partners" class="item">合作夥伴</a><a href="community" class="item">社群交流區</a></div>
-          </div>
-        </div>
-        <div class="right menu"><a href="about" class="item"><span class="phone"><i class="icon info"></i></span><span class="desktop laptop tablet">關於</span></a><a target="_blank" href="http://COSCUP.org/" class="ui button item"><span class="desktop laptop tablet phone">COSCUP 正版官網</span><i class="icon external square"></i></a></div>
+      <div class="ui borderless menu simplified horizontal wrap"><span class="desktop laptop tablet"><a href="speakers" class="item">講者</a><a href="staff" class="item">工作人員</a><a href="partners" class="item">合作夥伴</a><a href="community" class="item">社群交流區</a></span>
+        <div class="right menu"><span class="desktop laptop tablet"><a href="about" class="item">關於</a><a target="_blank" href="http://COSCUP.org/" class="item">COSCUP 正版官網<i class="icon external square"></i></a></span></div>
       </div>
     </footer>
     <footer id="footer">
