@@ -9,17 +9,20 @@ block title
 
 block content
   #program
-    header#header.align.center
+    //-header#header.align.center
       .horizontal.wrap
         .ui.segment.simplified.blue.inverted
           h1.ui.header
             //-i.icon.pointing.right
             | 議程
-          .countdown(data-use-schedule='speech',data-countdown-html='')
-          .countdown(data-use-schedule='workshop',data-countdown-html='')
-          .countdown(data-use-schedule='unconf',data-countdown-html='')
+          //-.countdown(data-use-schedule='speech',data-countdown-html='')
+          //-.countdown(data-use-schedule='workshop',data-countdown-html='')
+          //-.countdown(data-use-schedule='unconf',data-countdown-html='')
 
-    section#filter
+    section#gsheet
+      .horizontal.wrap
+        iframe(src="https://docs.google.com/spreadsheets/d/1BZrn2OqaRHT6qP4r71wtbYohU6zvPw6FWIcx1QOOrik/pubhtml?widget=true&amp;headers=false <https://docs.google.com/spreadsheets/d/1BZrn2OqaRHT6qP4r71wtbYohU6zvPw6FWIcx1QOOrik/pubhtml?widget=true&amp;headers=false>")
+    //-section#filter
       .horizontal.wrap
         #day-menu.ui.menu.simplified.fluid.two.item.blue.inverted.no.margin
           a.item(data-active-on='',data-expire-on='',data-tab='day-1') Day 1
@@ -45,7 +48,7 @@ block content
             i.icon.up.chevron
             | 收合
           | 已結束議程
-    section#day-1.ui.tab(data-tab='day-1')
+    //-section#day-1.ui.tab(data-tab='day-1')
       section.speech.active.schedule(data-use-schedule='speech')
         //.loader.ui.active.inverted.dimmer
           .ui.text.loader loading
@@ -89,7 +92,7 @@ block content
       section.unconf.schedule(data-use-schedule='unconf')
         //.loader.ui.active.inverted.dimmer
           .ui.text.loader loading
-    section#day-2.ui.tab(data-tab='day-2')
+    //-section#day-2.ui.tab(data-tab='day-2')
       section.speech.active.schedule(data-use-schedule='speech')
         //.loader.ui.active.inverted.dimmer
           .ui.text.loader loading
@@ -133,14 +136,19 @@ block content
       section.unconf.schedule(data-use-schedule='unconf')
         //.loader.ui.active.inverted.dimmer
           .ui.text.loader loading
-    section#advertisement.align.center
+    section#banner
       .horizontal.wrap
-        .ui.orange.inverted.segment.simplified 感謝 kktix 熱情贊助 COSCUP 2015
-    section#announcement.align.center
-      .horizontal.wrap
-        .ui.red.inverted.segment.simplified
-          i.icon.announcement
-          span 大會公告：遺失物品請到櫃臺領取
+        section#advertisement.align.center
+          .ui.orange.inverted.segment.simplified 感謝 kktix 熱情贊助 COSCUP 2015
+        section#announcement.align.center
+          .ui.red.inverted.segment.simplified
+            i.icon.announcement
+            span 大會公告：遺失物品請到櫃臺領取
+        //-.ui.grid.two.column.stackable
+          .row
+            .column
+            .column
+      //-include -bottombar
 
 block footer
   script(type='text/javascript', src='js/config.js')
