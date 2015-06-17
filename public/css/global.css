@@ -120,13 +120,18 @@ a, a:link {
   color: #000;
 }
 
-.menu.bar {
+.menu.simplified, .segment.simplified {
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
   border-radius: 0;
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
   box-shadow: none;
+}
+.menu.simplified .item:first-child, .menu.simplified .item:last-child, .segment.simplified .item:first-child, .segment.simplified .item:last-child {
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
 }
 
 .share.widget {

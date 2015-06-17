@@ -21,6 +21,8 @@
 }
 #program #gsheet .wrap {
   height: 100%;
+  -webkit-overflow-scrolling: touch;
+  overflow-y: scroll;
 }
 #program #gsheet .wrap iframe {
   width: 100%;

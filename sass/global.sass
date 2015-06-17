@@ -96,9 +96,11 @@ a, a:link
   font-size: 1.2rem!important
   color: #000
 
-.menu.bar
+.menu.simplified, .segment.simplified
   +border-radius(0)
   +box-shadow(none)
+  .item:first-child, .item:last-child
+    +border-radius(0)
 
 .share.widget
   display: inline-block
