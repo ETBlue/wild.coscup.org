@@ -24,15 +24,20 @@ $github: #111
         display: none
   #announcement
     background-color: rgba(red,0.1)
-  .wrap
-    #gsheet
+  #gsheet
+    position: absolute
+    top: 3rem
+    left: 0
+    right: 0
+    bottom: 7rem
+    .wrap
       -webkit-overflow-scrolling: touch
       overflow-y: scroll
       position: absolute
-      top: 3rem
+      top: 0
       left: 0
       right: 0
-      bottom: 7rem
+      bottom: 0
       @media screen and (max-height: 30rem)
         bottom: 0
       iframe
