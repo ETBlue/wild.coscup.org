@@ -7,22 +7,19 @@
 #program #announcement {
   background-color: rgba(255, 0, 0, 0.1);
 }
-#program #gsheet {
+#program #gsheet .wrap {
   position: absolute;
   top: 3rem;
   left: 0;
   right: 0;
   bottom: 7rem;
-}
-@media screen and (max-height: 30rem) {
-  #program #gsheet {
-    bottom: 0;
-  }
-}
-#program #gsheet .wrap {
-  height: 100%;
   -webkit-overflow-scrolling: touch;
   overflow-y: scroll;
+}
+@media screen and (max-height: 30rem) {
+  #program #gsheet .wrap {
+    bottom: 0;
+  }
 }
 #program #gsheet .wrap iframe {
   width: 100%;
