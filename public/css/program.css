@@ -51,28 +51,53 @@
   background-color: rgba(0, 0, 0, 0.1);
 }
 #program .schedule {
-  position: relative;
   display: none;
 }
 #program .schedule.active {
   display: block;
 }
-#program .schedule .slots {
-  position: fixed;
-  overflow-y: auto;
-  bottom: 7rem;
+#program .schedule .scroll-area {
+  position: absolute;
   top: 10.5rem;
   left: 0;
   right: 0;
+  bottom: 7rem;
+}
+#program .schedule .scroll-area .wrap {
+  -webkit-overflow-scrolling: touch;
+  overflow-y: scroll;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+#program .schedule .scroll-area .wrap .slots {
+  width: 100%;
+  height: 100%;
 }
 #program .schedule .ui.grid {
   margin: 0;
   padding: 0;
 }
+#program .schedule .ui.grid.room, #program .schedule .ui.grid.slots {
+  padding-left: 3.5rem;
+}
+#program .schedule .ui.grid .slot {
+  position: relative;
+  font-size: 1rem;
+}
+#program .schedule .ui.grid .slot .time {
+  position: absolute;
+  left: -3.5rem;
+  top: 0;
+  font-size: 1rem;
+  width: 3rem;
+  text-align: right;
+}
 #program .schedule .ui.grid .row {
   margin: 0;
   padding: 0.25rem;
-  padding-left: 3.5rem;
   overflow: hidden;
   white-space: nowrap;
 }
@@ -88,18 +113,6 @@
   border-radius: 0.5rem;
   border: 2px red solid;
 }
-#program .schedule .ui.grid .row .slot {
-  position: relative;
-  font-size: 1rem;
-}
-#program .schedule .ui.grid .row .slot .time {
-  position: absolute;
-  left: -3.5rem;
-  top: 0;
-  font-size: 1rem;
-  width: 3rem;
-  text-align: right;
-}
 #program .schedule .ui.grid .row .column {
   white-space: normal;
   margin: 0;
@@ -107,6 +120,7 @@
   min-width: 120px;
 }
 #program .schedule .ui.grid .row .column .segment {
+  min-height: 11rem;
   padding: 0.5rem;
 }
 #program .schedule .ui.grid .row .column .segment i.icon:last-child {

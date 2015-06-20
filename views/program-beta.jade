@@ -75,39 +75,41 @@ block content
                 a.ui.label.black.fluid
                   span 國際會議廳
                   i.icon.location.arrow.float.right
-          .ui.grid.five.column.slots
-            .row(data-active-on='',data-expire-on='').expire
+        .scroll-area
+          .horizontal.wrap
+            .ui.grid.five.column.slots
               .slot
                 .time 9:00
-              include -session1
-              include -session2
-              include -session1
-              include -session2
-              include -session1
-            .row(data-active-on='',data-expire-on='').expire
+              .row(data-active-on='',data-expire-on='').expire
+                include -session1
+                include -session2
+                include -session1
+                include -session2
+                include -session1
               .slot
                 .time 10:00
-              .ui.horizontal.divider break
-            .row(data-active-on='',data-expire-on='').active
+              .row(data-active-on='',data-expire-on='').expire
+                .ui.horizontal.divider break
               .slot
                 .time 11:00
-              include -session2
-              include -session1
-              include -session2
-              include -session1
-              include -session2
-            .row(data-active-on='',data-expire-on='')
+              .row(data-active-on='',data-expire-on='').active
+                include -session2
+                include -session1
+                include -session2
+                include -session1
+                include -session2
               .slot
                 .time 12:00
-              .ui.horizontal.divider break
-            .row(data-active-on='',data-expire-on='')
+              .row(data-active-on='',data-expire-on='')
+                .ui.horizontal.divider break
               .slot
                 .time 13:00
-              include -session2
-              include -session1
-              include -session2
-              include -session1
-              include -session2
+              .row(data-active-on='',data-expire-on='')
+                include -session2
+                include -session1
+                include -session2
+                include -session1
+                include -session2
       section.workshop.schedule(data-use-schedule='workshop')
         //.loader.ui.active.inverted.dimmer
           .ui.text.loader loading
