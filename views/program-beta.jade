@@ -5,7 +5,7 @@ block subhead
   //-meta(property="og:image",content="img/cover.png")
 
 block title
-  | 議程
+  | 議程 (beta)
 
 block content
   #program
@@ -19,10 +19,10 @@ block content
           //-.countdown(data-use-schedule='workshop',data-countdown-html='')
           //-.countdown(data-use-schedule='unconf',data-countdown-html='')
 
-    section#gsheet
+    //-section#gsheet
       .horizontal.wrap
         iframe(src='http://davidwalsh.name/scroll-iframes-ios')
-    //-section#filter
+    section#filter
       .horizontal.wrap
         #day-menu.ui.menu.simplified.fluid.two.item.blue.inverted.no.margin
           a.item(data-active-on='',data-expire-on='',data-tab='day-1') Day 1
@@ -37,10 +37,10 @@ block content
           a.item.green(data-change-schedule='unconf') 兩軌 unconf
             //.ui.label.green 2
           a.right.item.yellow
-            | 我喜歡的
+            | 喜歡
             //i.icon.star.yellow
             .ui.label.yellow 10
-        #schedule-expand-button.ui.button.fluid
+        //-#schedule-expand-button.ui.button.fluid
           span.expand.action
             i.icon.down.chevron
             | 展開
@@ -48,12 +48,34 @@ block content
             i.icon.up.chevron
             | 收合
           | 已結束議程
-    //-section#day-1.ui.tab(data-tab='day-1')
+    section#day-1.ui.tab(data-tab='day-1')
       section.speech.active.schedule(data-use-schedule='speech')
         //.loader.ui.active.inverted.dimmer
           .ui.text.loader loading
         .horizontal.wrap
-          .ui.grid.five.column
+          .ui.grid.five.column.room
+            .row
+              .column
+                a.ui.label.black.fluid
+                  span 國際會議廳
+                  i.icon.location.arrow.float.right
+              .column
+                a.ui.label.black.fluid
+                  span 第一會議室
+                  i.icon.location.arrow.float.right
+              .column
+                a.ui.label.black.fluid
+                  span 第二會議室
+                  i.icon.location.arrow.float.right
+              .column
+                a.ui.label.black.fluid
+                  span 第三會議室
+                  i.icon.location.arrow.float.right
+              .column
+                a.ui.label.black.fluid
+                  span 國際會議廳
+                  i.icon.location.arrow.float.right
+          .ui.grid.five.column.slots
             .row(data-active-on='',data-expire-on='').expire
               .slot
                 .time 9:00
@@ -92,7 +114,7 @@ block content
       section.unconf.schedule(data-use-schedule='unconf')
         //.loader.ui.active.inverted.dimmer
           .ui.text.loader loading
-    //-section#day-2.ui.tab(data-tab='day-2')
+    section#day-2.ui.tab(data-tab='day-2')
       section.speech.active.schedule(data-use-schedule='speech')
         //.loader.ui.active.inverted.dimmer
           .ui.text.loader loading
@@ -156,29 +178,31 @@ block content
             include -level-one-nav-third
 
 block footer
-  //-script(type='text/javascript', src='js/config.js')
-  //-script(type='text/javascript', src='js/store.js')
-  //-script(type='text/javascript', src='js/tabletop.js')
-  //-script(type='text/javascript', src='js/underscore.js')
-  //-script(type='text/javascript', src='js/moment.js')
-  //-script(type='text/javascript', src='js/program.js')
+  script(type='text/javascript', src='js/config.js')
+  script(type='text/javascript', src='js/store.js')
+  script(type='text/javascript', src='js/tabletop.js')
+  script(type='text/javascript', src='js/underscore.js')
+  script(type='text/javascript', src='js/moment.js')
+  script(type='text/javascript', src='js/program.js')
 
   // jquery address for semantic ui tab
-  //-script(type="text/javascript",src="assets/jquery.address.js")
+  script(type="text/javascript",src="assets/jquery.address.js")
 
 block script
   script.
     $(document).ready(function(){
 
-      $("[href*='program']").addClass("active");
+      $("[href*='program-beta']").addClass("active");
 
-      //$('#day-menu .item').tab({
-      //  history: true,
-      //  historyType: 'hash',
-      //  //context: $('#program')
-      //}).on('click tap', function(){
-      //  window.scrollTo(0, 0);
-      //});
+      //$('.ui.sticky').sticky();
+
+      $('#day-menu .item').tab({
+        history: true,
+        historyType: 'hash',
+        //context: $('#program')
+      }).on('click tap', function(){
+        window.scrollTo(0, 0);
+      });
 
       //$('#schedule-expand-button').on('click tap',function(){
       //  $('.row.expire').slideToggle();

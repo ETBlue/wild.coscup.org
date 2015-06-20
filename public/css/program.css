@@ -34,7 +34,7 @@
   border: none;
 }
 #program #banner {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
@@ -53,10 +53,17 @@
 #program .schedule {
   position: relative;
   display: none;
-  padding: 1rem 0;
 }
 #program .schedule.active {
   display: block;
+}
+#program .schedule .slots {
+  position: fixed;
+  overflow-y: auto;
+  bottom: 7rem;
+  top: 10.5rem;
+  left: 0;
+  right: 0;
 }
 #program .schedule .ui.grid {
   margin: 0;
@@ -65,14 +72,12 @@
 #program .schedule .ui.grid .row {
   margin: 0;
   padding: 0.25rem;
-  padding-left: 4rem;
-  overflow-x: auto;
-  overflow-y: hidden;
+  padding-left: 3.5rem;
+  overflow: hidden;
   white-space: nowrap;
 }
 #program .schedule .ui.grid .row.expire {
   opacity: 0.8;
-  display: none;
 }
 #program .schedule .ui.grid .row.expire .segment {
   background-color: rgba(255, 255, 255, 0);
@@ -89,10 +94,10 @@
 }
 #program .schedule .ui.grid .row .slot .time {
   position: absolute;
-  left: -4rem;
+  left: -3.5rem;
   top: 0;
   font-size: 1rem;
-  width: 3.5rem;
+  width: 3rem;
   text-align: right;
 }
 #program .schedule .ui.grid .row .column {

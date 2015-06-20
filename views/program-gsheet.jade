@@ -5,7 +5,7 @@ block subhead
   //-meta(property="og:image",content="img/cover.png")
 
 block title
-  | 議程
+  | 議程 (gsheet) 
 
 block content
   #program
@@ -171,7 +171,7 @@ block script
   script.
     $(document).ready(function(){
 
-      $("[href*='program']").addClass("active");
+      $("[href*='program-gsheet']").addClass("active");
 
       //$('#day-menu .item').tab({
       //  history: true,
