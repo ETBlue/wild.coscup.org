@@ -39,13 +39,27 @@
   left: 0;
   right: 0;
 }
+#program #banner .ui.grid {
+  margin: 0;
+  padding: 0;
+}
+#program #banner .ui.grid .row {
+  margin: 0;
+  padding: 0;
+}
+#program #banner .ui.grid .row .column {
+  margin: 0;
+  padding: 0;
+}
 #program #banner .segment {
   padding: 0.5rem;
+  white-space: nowrap;
+  overflow-x: auto;
 }
-#program #banner #advertisement {
+#program #banner .advertisement {
   background-color: rgba(245, 204, 163, 0.5);
 }
-#program #banner #announcement {
+#program #banner .announcement {
   background-color: rgba(0, 0, 0, 0.1);
 }
 #program .schedule {
@@ -64,6 +78,7 @@
 @media screen and (max-height: 480px) {
   #program .schedule .scroll-area {
     top: 5.25rem;
+    bottom: 2.75rem;
   }
 }
 #program .schedule .scroll-area .wrap {

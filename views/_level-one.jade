@@ -19,10 +19,10 @@ block body
         include -level-one-nav
         block topnav
       .phone
-        //.ui.simple.dropdown.logo.item
+        //.ui.dropdown.logo.item
         a.item(href="index").long
           | COSCUP 2015
-        .ui.simple.dropdown.item
+        .ui.dropdown.item
           block title
           //img.logo.image(src="img/logo.png")
           i.icon.dropdown
@@ -31,20 +31,28 @@ block body
             include -level-one-nav-second
             include -level-one-nav-third
         block topnav
-      .right.menu
+      .ui.dropdown.right.item
+        i.icon.globe
+        span.desktop.laptop.tablet 語言
+        .menu
+          .item English
+          .item 正體中文
+      .ui.dropdown.right.item.short
+        i.icon.ellipsis.vertical
+        .menu
+          a.item(href="join")
+            i.icon.pointing.right
+            span 參加！
+          a.item(href="partners")
+            i.icon.money
+            span 贊助！
+      .right.menu.long
         a.item(href="join")
           i.icon.pointing.right
           span.desktop.laptop.tablet 參加！
         a.item(href="partners")
           i.icon.money
           span.desktop.laptop.tablet 贊助！
-        //-.ui.simple.dropdown.right.item
-          i.icon.globe
-          | 語言
-          i.icon.dropdown
-          .menu
-            .item English
-            .item 正體中文
         //-.right.item
           .ui.icon.input
             input(type='text',placeholder='')

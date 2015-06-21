@@ -8,12 +8,12 @@ block title
   | 議程
 
 block topnav
-  .ui.simple.dropdown.item.short
+  .ui.dropdown.item.short
     | Day 1
     //i.icon.dropdown
     .day-menu.menu
       include -day-menu
-  .ui.simple.dropdown.item.short
+  .ui.dropdown.item.short
     | 演講
     //i.icon.dropdown
     .schedule-menu.menu
@@ -161,18 +161,20 @@ block content
         //.loader.ui.active.inverted.dimmer
           .ui.text.loader loading
     section#banner
-      section#advertisement.align.center
-        .horizontal.wrap
-          .ui.orange.inverted.segment.simplified 感謝 kktix 熱情贊助 COSCUP 2015
-      section#announcement.align.center
-        .horizontal.wrap
-          .ui.inverted.segment.simplified
-            i.icon.announcement
-            span 大會公告：遺失物品請到櫃臺領取
-        //-.ui.grid.two.column.stackable
+      .long
+        section.advertisement
+          .horizontal.wrap
+            include -advertisement
+        section.announcement
+          .horizontal.wrap
+            include -announcement
+      .short
+        .ui.grid.two.column
           .row
             .column
+              include -advertisement
             .column
+              include -announcement
       //-footer#bottombar
         .ui.borderless.menu.simplified.horizontal.wrap
           include -level-one-nav-second
@@ -210,6 +212,7 @@ block script
         var scroll_position = $(this).scrollLeft();
         $('.grid .row').scrollLeft(scroll_position);
       });
+
 
       //$('#schedule-expand-button').on('click tap',function(){
       //  $('.row.expire').slideToggle();
