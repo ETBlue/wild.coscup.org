@@ -11,48 +11,63 @@ block body
   nav#topbar
     //-.ui.borderless.secondary.menu.simplified.horizontal.wrap
     .ui.borderless.menu.simplified.horizontal.wrap
-      .desktop.laptop.tablet
-        //a.logo.item(href="index")
-          img.logo.image(src="img/logo.png")
-        a.item(href="index").long
-          | COSCUP 2015
-        include -level-one-nav
-        block topnav
-      .phone
-        //.ui.dropdown.logo.item
-        a.item(href="index").long
-          | COSCUP 2015
-        .ui.dropdown.item
-          block title
-          //img.logo.image(src="img/logo.png")
-          i.icon.dropdown
-          .menu
-            include -level-one-nav
-            include -level-one-nav-second
-            include -level-one-nav-third
-        block topnav
+      .short
+        .desktop.laptop.tablet.phone
+          //.ui.dropdown.logo.item
+          a.item(href="index").long
+            | COSCUP 2015
+          .ui.dropdown.item
+            block title
+            //img.logo.image(src="img/logo.png")
+            i.icon.dropdown
+            .menu
+              include -level-one-nav
+              include -level-one-nav-second
+              include -level-one-nav-third
+          block topnav
+      .long
+        .desktop.laptop.tablet
+          //a.logo.item(href="index")
+            img.logo.image(src="img/logo.png")
+          a.item(href="index").long
+            | COSCUP 2015
+          include -level-one-nav
+          block topnav
+        .phone
+          //.ui.dropdown.logo.item
+          a.item(href="index").long
+            | COSCUP 2015
+          .ui.dropdown.item
+            block title
+            //img.logo.image(src="img/logo.png")
+            i.icon.dropdown
+            .menu
+              include -level-one-nav
+              include -level-one-nav-second
+              include -level-one-nav-third
+          block topnav
       .ui.dropdown.right.item
         i.icon.globe
         span.desktop.laptop.tablet 語言
         .menu
           .item English
           .item 正體中文
-      .ui.dropdown.right.item.short
-        i.icon.ellipsis.vertical
-        .menu
-          a.item(href="join")
-            i.icon.pointing.right
-            span 參加！
-          a.item(href="partners")
-            i.icon.money
-            span 贊助！
+      .right.menu.short
+        .desktop.laptop.tablet
+          include -action-menu
+        .phone
+          .ui.dropdown.item
+            i.icon.ellipsis.vertical
+            .menu
+              include -action-menu
       .right.menu.long
-        a.item(href="join")
-          i.icon.pointing.right
-          span.desktop.laptop.tablet 參加！
-        a.item(href="partners")
-          i.icon.money
-          span.desktop.laptop.tablet 贊助！
+        .desktop.laptop.tablet
+          include -action-menu
+        .phone
+          .ui.dropdown.item
+            i.icon.ellipsis.vertical
+            .menu
+              include -action-menu
         //-.right.item
           .ui.icon.input
             input(type='text',placeholder='')

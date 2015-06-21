@@ -29,23 +29,38 @@
   <body>
     <nav id="topbar">
       <div class="ui borderless menu simplified horizontal wrap">
-        <div class="desktop laptop tablet">
-          <!--a.logo.item(href="index")img.logo.image(src="img/logo.png")
-          --><a href="index" class="item long">COSCUP 2015</a><a href="index" class="item short">COSCUP 2015 首頁</a><a href="news" class="item">
-            <!--i.icon.rss-->新聞</a><a href="program-gsheet" class="item">
-            <!--i.icon.calendar-->議程 (gsheet)</a><a href="program-beta" class="item">
-            <!--i.icon.calendar-->議程</a><a href="venue" class="item">
-            <!--i.icon.map.marker-->交通資訊</a>
+        <div class="short">
+          <div class="desktop laptop tablet phone">
+            <!--.ui.dropdown.logo.item--><a href="index" class="item long">COSCUP 2015</a>
+            <div class="ui dropdown item">議程 (gsheet) 
+              <!--img.logo.image(src="img/logo.png")--><i class="icon dropdown"></i>
+              <div class="menu"><a href="index" class="item short">COSCUP 2015 首頁</a><a href="news" class="item">
+                  <!--i.icon.rss-->新聞</a><a href="program-gsheet" class="item">
+                  <!--i.icon.calendar-->議程 (gsheet)</a><a href="program-beta" class="item">
+                  <!--i.icon.calendar-->議程</a><a href="venue" class="item">
+                  <!--i.icon.map.marker-->交通資訊</a><a href="speakers" class="item">講者</a><a href="staff" class="item">工作人員</a><a href="partners" class="item">合作夥伴</a><a href="community" class="item">社群交流區</a><a href="about" class="item">關於</a><a target="_blank" href="http://COSCUP.org/" class="item">COSCUP 正版官網<i class="icon external square"></i></a></div>
+            </div>
+          </div>
         </div>
-        <div class="phone">
-          <!--.ui.dropdown.logo.item--><a href="index" class="item long">COSCUP 2015</a>
-          <div class="ui dropdown item">議程 (gsheet) 
-            <!--img.logo.image(src="img/logo.png")--><i class="icon dropdown"></i>
-            <div class="menu"><a href="index" class="item short">COSCUP 2015 首頁</a><a href="news" class="item">
-                <!--i.icon.rss-->新聞</a><a href="program-gsheet" class="item">
-                <!--i.icon.calendar-->議程 (gsheet)</a><a href="program-beta" class="item">
-                <!--i.icon.calendar-->議程</a><a href="venue" class="item">
-                <!--i.icon.map.marker-->交通資訊</a><a href="speakers" class="item">講者</a><a href="staff" class="item">工作人員</a><a href="partners" class="item">合作夥伴</a><a href="community" class="item">社群交流區</a><a href="about" class="item">關於</a><a target="_blank" href="http://COSCUP.org/" class="item">COSCUP 正版官網<i class="icon external square"></i></a></div>
+        <div class="long">
+          <div class="desktop laptop tablet">
+            <!--a.logo.item(href="index")img.logo.image(src="img/logo.png")
+            --><a href="index" class="item long">COSCUP 2015</a><a href="index" class="item short">COSCUP 2015 首頁</a><a href="news" class="item">
+              <!--i.icon.rss-->新聞</a><a href="program-gsheet" class="item">
+              <!--i.icon.calendar-->議程 (gsheet)</a><a href="program-beta" class="item">
+              <!--i.icon.calendar-->議程</a><a href="venue" class="item">
+              <!--i.icon.map.marker-->交通資訊</a>
+          </div>
+          <div class="phone">
+            <!--.ui.dropdown.logo.item--><a href="index" class="item long">COSCUP 2015</a>
+            <div class="ui dropdown item">議程 (gsheet) 
+              <!--img.logo.image(src="img/logo.png")--><i class="icon dropdown"></i>
+              <div class="menu"><a href="index" class="item short">COSCUP 2015 首頁</a><a href="news" class="item">
+                  <!--i.icon.rss-->新聞</a><a href="program-gsheet" class="item">
+                  <!--i.icon.calendar-->議程 (gsheet)</a><a href="program-beta" class="item">
+                  <!--i.icon.calendar-->議程</a><a href="venue" class="item">
+                  <!--i.icon.map.marker-->交通資訊</a><a href="speakers" class="item">講者</a><a href="staff" class="item">工作人員</a><a href="partners" class="item">合作夥伴</a><a href="community" class="item">社群交流區</a><a href="about" class="item">關於</a><a target="_blank" href="http://COSCUP.org/" class="item">COSCUP 正版官網<i class="icon external square"></i></a></div>
+            </div>
           </div>
         </div>
         <div class="ui dropdown right item"><i class="icon globe"></i><span class="desktop laptop tablet">語言</span>
@@ -54,10 +69,21 @@
             <div class="item">正體中文</div>
           </div>
         </div>
-        <div class="ui dropdown right item short"><i class="icon ellipsis vertical"></i>
-          <div class="menu"><a href="join" class="item"><i class="icon pointing right"></i><span>參加！</span></a><a href="partners" class="item"><i class="icon money"></i><span>贊助！</span></a></div>
+        <div class="right menu short">
+          <div class="desktop laptop tablet"><a href="join" class="item"><i class="icon pointing right"></i><span>參加！</span></a><a href="partners" class="item"><i class="icon money"></i><span>贊助！</span></a></div>
+          <div class="phone">
+            <div class="ui dropdown item"><i class="icon ellipsis vertical"></i>
+              <div class="menu"><a href="join" class="item"><i class="icon pointing right"></i><span>參加！</span></a><a href="partners" class="item"><i class="icon money"></i><span>贊助！</span></a></div>
+            </div>
+          </div>
         </div>
-        <div class="right menu long"><a href="join" class="item"><i class="icon pointing right"></i><span class="desktop laptop tablet">參加！</span></a><a href="partners" class="item"><i class="icon money"></i><span class="desktop laptop tablet">贊助！</span></a>
+        <div class="right menu long">
+          <div class="desktop laptop tablet"><a href="join" class="item"><i class="icon pointing right"></i><span>參加！</span></a><a href="partners" class="item"><i class="icon money"></i><span>贊助！</span></a></div>
+          <div class="phone">
+            <div class="ui dropdown item"><i class="icon ellipsis vertical"></i>
+              <div class="menu"><a href="join" class="item"><i class="icon pointing right"></i><span>參加！</span></a><a href="partners" class="item"><i class="icon money"></i><span>贊助！</span></a></div>
+            </div>
+          </div>
           <!--block topbar-->
         </div>
       </div>

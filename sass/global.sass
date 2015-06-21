@@ -121,6 +121,12 @@ $laptop: 1440px
 .desktop, .laptop, .tablet, .phone
   display: none!important
 
+$short: 480px
+
+.long, .short
+  display: none!important
+
+
 @media screen and (min-width: $laptop)
   .desktop
     display: initial!important
@@ -139,11 +145,6 @@ $laptop: 1440px
     display: initial!important
   html, body
     font-size: 14px
-
-$short: 480px
-
-.long, .short
-  display: none!important
 
 @media screen and (max-height: $short)
   .short
