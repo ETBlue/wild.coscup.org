@@ -97,8 +97,8 @@ $github: #111
         margin: 0
         padding: 0.25rem
         //padding-left: $timemarker-width
-        overflow: hidden
-        //overflow-x: auto
+        //overflow: hidden
+        overflow-x: auto
         //overflow-y: hidden
         white-space: nowrap
         &.expire
@@ -112,20 +112,15 @@ $github: #111
           //+box-shadow(0 0 5px hsla(0,100,50,1))
           //background-color: hsla(0,100,50,0.5)
         .column
-          &:first-child
-            //margin-left: -100px
+          min-width: 10rem
           white-space: normal
           margin: 0
           padding: 0
-          min-width: 120px
+          i.icon:last-child
+            margin-right: 0
           .segment
             min-height: 11rem
             padding: 0.5rem
-            i.icon:last-child
-              margin-left: 0.5em
-              margin-right: 0
-            .ui.label:first-child
-              margin-left: 0
-              margin-right: 0.5em
-            .message
-              padding: 0.5rem
+            //.ui.label:first-child
+            //  margin-left: 0
+            //  margin-right: 0.5em

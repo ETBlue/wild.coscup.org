@@ -82,7 +82,7 @@ block content
                 .time 9:00
               .row(data-active-on='',data-expire-on='').expire
                 include -session1
-                include -session2
+                include -session
                 include -session1
                 include -session2
                 include -session1
@@ -94,7 +94,7 @@ block content
                 .time 11:00
               .row(data-active-on='',data-expire-on='').active
                 include -session2
-                include -session1
+                include -session
                 include -session2
                 include -session1
                 include -session2
@@ -106,7 +106,7 @@ block content
                 .time 13:00
               .row(data-active-on='',data-expire-on='')
                 include -session2
-                include -session1
+                include -session
                 include -session2
                 include -session1
                 include -session2
@@ -204,6 +204,11 @@ block script
         //context: $('#program')
       }).on('click tap', function(){
         window.scrollTo(0, 0);
+      });
+
+      $('.grid .row').scroll(function(){
+        var scroll_position = $(this).scrollLeft();
+        $('.grid .row').scrollLeft(scroll_position);
       });
 
       //$('#schedule-expand-button').on('click tap',function(){

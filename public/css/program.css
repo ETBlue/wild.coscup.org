@@ -98,7 +98,7 @@
 #program .schedule .ui.grid .row {
   margin: 0;
   padding: 0.25rem;
-  overflow: hidden;
+  overflow-x: auto;
   white-space: nowrap;
 }
 #program .schedule .ui.grid .row.expire {
@@ -114,23 +114,15 @@
   border: 2px red solid;
 }
 #program .schedule .ui.grid .row .column {
+  min-width: 10rem;
   white-space: normal;
   margin: 0;
   padding: 0;
-  min-width: 120px;
+}
+#program .schedule .ui.grid .row .column i.icon:last-child {
+  margin-right: 0;
 }
 #program .schedule .ui.grid .row .column .segment {
   min-height: 11rem;
-  padding: 0.5rem;
-}
-#program .schedule .ui.grid .row .column .segment i.icon:last-child {
-  margin-left: 0.5em;
-  margin-right: 0;
-}
-#program .schedule .ui.grid .row .column .segment .ui.label:first-child {
-  margin-left: 0;
-  margin-right: 0.5em;
-}
-#program .schedule .ui.grid .row .column .segment .message {
   padding: 0.5rem;
 }
