@@ -184,3 +184,17 @@ a, a:link {
     font-size: 14px;
   }
 }
+.long, .short {
+  display: none !important;
+}
+
+@media screen and (max-height: 480px) {
+  .short {
+    display: initial !important;
+  }
+}
+@media screen and (min-height: 480px) {
+  .long {
+    display: initial !important;
+  }
+}

@@ -140,3 +140,16 @@ $laptop: 1440px
   html, body
     font-size: 14px
 
+$short: 480px
+
+.long, .short
+  display: none!important
+
+@media screen and (max-height: $short)
+  .short
+    display: initial!important
+
+@media screen and (min-height: $short)
+  .long
+    display: initial!important
+

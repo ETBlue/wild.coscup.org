@@ -5,7 +5,19 @@ block subhead
   //-meta(property="og:image",content="img/cover.png")
 
 block title
-  | 議程 (beta)
+  | 議程
+
+block topnav
+  .ui.simple.dropdown.item.short
+    | Day 1
+    //i.icon.dropdown
+    .day-menu.menu
+      include -day-menu
+  .ui.simple.dropdown.item.short
+    | 演講
+    //i.icon.dropdown
+    .schedule-menu.menu
+      include -schedule-menu
 
 block content
   #program
@@ -22,24 +34,12 @@ block content
     //-section#gsheet
       .horizontal.wrap
         iframe(src='http://davidwalsh.name/scroll-iframes-ios')
-    section#filter
+    section#filter.long
       .horizontal.wrap
-        #day-menu.ui.menu.simplified.fluid.two.item.blue.inverted.no.margin
-          a.item(data-active-on='',data-expire-on='',data-tab='day-1') Day 1
-            .ui.label 8/15 Sat.
-          a.item(data-active-on='',data-expire-on='',data-tab='day-2') Day 2
-            .ui.label 8/16 Sun.
-        #schedule-menu.ui.secondary.pointing.menu.no.margin
-          a.item.blue(data-change-schedule='speech') 議程
-            //.ui.label.blue 5
-          a.item.teal(data-change-schedule='workshop') 工作坊
-            //.ui.label.teal 3
-          a.item.green(data-change-schedule='unconf') unconf
-            //.ui.label.green 2
-          a.right.item.yellow
-            | 喜歡
-            //i.icon.star.yellow
-            .ui.label.yellow 10
+        .day-menu.ui.menu.simplified.fluid.two.item.blue.inverted.no.margin
+          include -day-menu
+        .schedule-menu.ui.secondary.pointing.menu.no.margin
+          include -schedule-menu
         //-#schedule-expand-button.ui.button.fluid
           span.expand.action
             i.icon.down.chevron
@@ -198,7 +198,7 @@ block script
 
       //$('.ui.sticky').sticky();
 
-      $('#day-menu .item').tab({
+      $('.day-menu .item').tab({
         history: true,
         historyType: 'hash',
         //context: $('#program')

@@ -61,6 +61,11 @@
   right: 0;
   bottom: 5.25rem;
 }
+@media screen and (max-height: 480px) {
+  #program .schedule .scroll-area {
+    top: 5.25rem;
+  }
+}
 #program .schedule .scroll-area .wrap {
   -webkit-overflow-scrolling: touch;
   overflow-y: scroll;

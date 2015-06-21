@@ -24,41 +24,72 @@
     <link rel="stylesheet" href="css/level-one.css"/>
     <meta property="og:image" content="http://etblue.github.io/wild.coscup.org/public/img/cover.png"/>
     <link rel="stylesheet" href="css/program.css"/>
-    <title>議程 (beta) | 開源人年會 COSCUP.org 野生官網</title>
+    <title>議程 | 開源人年會 COSCUP.org 野生官網</title>
   </head>
   <body>
     <nav id="topbar">
       <div class="ui borderless menu simplified horizontal wrap">
         <div class="desktop laptop tablet">
           <!--a.logo.item(href="index")img.logo.image(src="img/logo.png")
-          --><a href="index" class="item">COSCUP 2015</a><a href="news" class="item">
+          --><a href="index" class="item long">COSCUP 2015</a><a href="index" class="item short">COSCUP 2015</a><a href="news" class="item">
             <!--i.icon.rss-->新聞</a><a href="program-gsheet" class="item">
             <!--i.icon.calendar-->議程 (gsheet)</a><a href="program-beta" class="item">
-            <!--i.icon.calendar-->議程 (beta)</a><a href="venue" class="item">
+            <!--i.icon.calendar-->議程</a><a href="venue" class="item">
             <!--i.icon.map.marker-->交通資訊</a>
+          <div class="ui simple dropdown item short">Day 1
+            <!--i.icon.dropdown-->
+            <div class="day-menu menu"><a data-active-on="" data-expire-on="" data-tab="day-1" class="item">Day 1
+                <div class="ui label">8/15 Sat.</div></a><a data-active-on="" data-expire-on="" data-tab="day-2" class="item">Day 2
+                <div class="ui label">8/16 Sun.</div></a></div>
+          </div>
+          <div class="ui simple dropdown item short">演講
+            <!--i.icon.dropdown-->
+            <div class="schedule-menu menu"><a data-change-schedule="speech" class="item blue">演講
+                <!--.ui.label.blue 5--></a><a data-change-schedule="workshop" class="item teal">工作坊
+                <!--.ui.label.teal 3--></a><a data-change-schedule="unconf" class="item green">unconf
+                <!--.ui.label.green 2--></a><a class="right item yellow">喜歡
+                <!--i.icon.star.yellow-->
+                <div class="ui label yellow">10</div></a></div>
+          </div>
         </div>
         <div class="phone">
-          <!--.ui.simple.dropdown.logo.item--><a href="index" class="item">COSCUP 2015</a>
-          <div class="ui simple dropdown item">議程 (beta)
+          <!--.ui.simple.dropdown.logo.item--><a href="index" class="item long">COSCUP 2015</a>
+          <div class="ui simple dropdown item">議程
             <!--img.logo.image(src="img/logo.png")--><i class="icon dropdown"></i>
-            <div class="menu"><a href="news" class="item">
+            <div class="menu"><a href="index" class="item short">COSCUP 2015</a><a href="news" class="item">
                 <!--i.icon.rss-->新聞</a><a href="program-gsheet" class="item">
                 <!--i.icon.calendar-->議程 (gsheet)</a><a href="program-beta" class="item">
-                <!--i.icon.calendar-->議程 (beta)</a><a href="venue" class="item">
+                <!--i.icon.calendar-->議程</a><a href="venue" class="item">
                 <!--i.icon.map.marker-->交通資訊</a><a href="speakers" class="item">講者</a><a href="staff" class="item">工作人員</a><a href="partners" class="item">合作夥伴</a><a href="community" class="item">社群交流區</a><a href="about" class="item">關於</a><a target="_blank" href="http://COSCUP.org/" class="item">COSCUP 正版官網<i class="icon external square"></i></a></div>
+          </div>
+          <div class="ui simple dropdown item short">Day 1
+            <!--i.icon.dropdown-->
+            <div class="day-menu menu"><a data-active-on="" data-expire-on="" data-tab="day-1" class="item">Day 1
+                <div class="ui label">8/15 Sat.</div></a><a data-active-on="" data-expire-on="" data-tab="day-2" class="item">Day 2
+                <div class="ui label">8/16 Sun.</div></a></div>
+          </div>
+          <div class="ui simple dropdown item short">演講
+            <!--i.icon.dropdown-->
+            <div class="schedule-menu menu"><a data-change-schedule="speech" class="item blue">演講
+                <!--.ui.label.blue 5--></a><a data-change-schedule="workshop" class="item teal">工作坊
+                <!--.ui.label.teal 3--></a><a data-change-schedule="unconf" class="item green">unconf
+                <!--.ui.label.green 2--></a><a class="right item yellow">喜歡
+                <!--i.icon.star.yellow-->
+                <div class="ui label yellow">10</div></a></div>
           </div>
         </div>
         <div class="right menu"><a href="join" class="item"><i class="icon pointing right"></i><span class="desktop laptop tablet">參加！</span></a><a href="partners" class="item"><i class="icon money"></i><span class="desktop laptop tablet">贊助！</span></a>
+          <!--block topbar-->
         </div>
       </div>
     </nav>
     <div id="program">
-      <section id="filter">
+      <section id="filter" class="long">
         <div class="horizontal wrap">
-          <div id="day-menu" class="ui menu simplified fluid two item blue inverted no margin"><a data-active-on="" data-expire-on="" data-tab="day-1" class="item">Day 1
+          <div class="day-menu ui menu simplified fluid two item blue inverted no margin"><a data-active-on="" data-expire-on="" data-tab="day-1" class="item">Day 1
               <div class="ui label">8/15 Sat.</div></a><a data-active-on="" data-expire-on="" data-tab="day-2" class="item">Day 2
               <div class="ui label">8/16 Sun.</div></a></div>
-          <div id="schedule-menu" class="ui secondary pointing menu no margin"><a data-change-schedule="speech" class="item blue">議程
+          <div class="schedule-menu ui secondary pointing menu no margin"><a data-change-schedule="speech" class="item blue">演講
               <!--.ui.label.blue 5--></a><a data-change-schedule="workshop" class="item teal">工作坊
               <!--.ui.label.teal 3--></a><a data-change-schedule="unconf" class="item green">unconf
               <!--.ui.label.green 2--></a><a class="right item yellow">喜歡
@@ -557,7 +588,7 @@
       
         //$('.ui.sticky').sticky();
       
-        $('#day-menu .item').tab({
+        $('.day-menu .item').tab({
           history: true,
           historyType: 'hash',
           //context: $('#program')

@@ -14,12 +14,14 @@ block body
       .desktop.laptop.tablet
         //a.logo.item(href="index")
           img.logo.image(src="img/logo.png")
-        a.item(href="index")
+        a.item(href="index").long
           | COSCUP 2015
         include -level-one-nav
+        block topnav
       .phone
         //.ui.simple.dropdown.logo.item
-        a.item(href="index") COSCUP 2015
+        a.item(href="index").long
+          | COSCUP 2015
         .ui.simple.dropdown.item
           block title
           //img.logo.image(src="img/logo.png")
@@ -28,6 +30,7 @@ block body
             include -level-one-nav
             include -level-one-nav-second
             include -level-one-nav-third
+        block topnav
       .right.menu
         a.item(href="join")
           i.icon.pointing.right
@@ -46,7 +49,7 @@ block body
           .ui.icon.input
             input(type='text',placeholder='')
             i.icon.search.link
-        block topbar
+        //block topbar
 
   block content
 
