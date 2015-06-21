@@ -39,10 +39,8 @@
   left: 0;
   right: 0;
 }
-@media screen and (max-height: 30rem) {
-  #program #banner {
-    display: none;
-  }
+#program #banner .segment {
+  padding: 0.5rem;
 }
 #program #banner #advertisement {
   background-color: rgba(245, 204, 163, 0.5);
@@ -61,7 +59,7 @@
   top: 10.5rem;
   left: 0;
   right: 0;
-  bottom: 7rem;
+  bottom: 5.25rem;
 }
 #program .schedule .scroll-area .wrap {
   -webkit-overflow-scrolling: touch;
